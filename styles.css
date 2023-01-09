@@ -1,0 +1,180 @@
+body {
+   background: conic-gradient(from 180deg at 50% 50%, #fd9f0880 0deg, rgba(253, 160, 8, 0) 181.87deg, #fd9f0880 360deg);
+    font-family: 'Verdana', Courier, monospace;
+    margin: 0%;
+    
+    
+}
+h1 { font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+color: rgb(0, 27, 12);
+}
+
+nav li {  Display:inline-block;
+    padding: 40px;
+    margin-top: 80px;
+  
+
+}
+nav a {
+    color: rgb(205, 205, 205);
+    text-decoration: none;
+    padding:20px ;
+}   
+nav a:hover { 
+    text-decoration: underline;
+}
+
+nav ul {
+    padding: 20px;
+
+}
+
+.active {
+    background-color: blueviolet;
+    color :white
+}
+
+
+header {
+    background-image: url('iStock-516189065\ copy.jpg');
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    max-width: 1440px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+header {
+    position: relative;
+
+}
+
+nav {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.hero {
+    background: conic-gradient(from 180deg at 50% 50%, #4E0F3C -232.5deg, #767676 101.25deg, #4E0F3C 127.5deg, #767676 461.25deg);
+    width: 1300px;
+    height: 482px;
+    margin: 20px;
+    border-radius: 10px;
+    color: rgb(62, 34, 34);
+   
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.purple {
+    width: 260px;
+    height: 400px;
+    border-radius: 2%;
+    margin-top: 40px;
+   
+}
+.Trending {
+    background: conic-gradient(from 180deg at 50% 50%, rgba(74, 142, 157, 0.53) -179.77deg, #4A8E9D 156.82deg, rgba(74, 142, 157, 0.53) 180.23deg, #4A8E9D 516.82deg);
+    width: 1300px;
+    height: 484px;
+    left: 70px;
+    top: 804px;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto; 
+    color: rgb(62, 34, 34);
+ 
+    resize: both;
+    overflow: auto
+}
+
+.collections {
+        background-color: rgba(12, 9, 1, 0.569);
+        width: 530px;
+        height: 240px;
+        margin-left: 180px;
+        margin-top: 20px;
+        position: absolute;
+      
+        
+        border-radius: 10px;
+        
+        color: rgb(62, 34, 34);
+        padding: px;
+        resize: both;
+        
+}
+
+.collections img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+
+}
+
+
+.catagories {
+    background-color: rgba(12, 9, 1, 0.569);
+    width: 530px;
+    height: 240px;
+    position:absolute;
+    margin-left: 730px;
+    margin-top: 20px;
+
+    border-radius: 10px;
+    color: rgb(255, 10, 10);
+    
+}
+
+.catagories img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+   
+}
+
+.subcription {
+        background-color: rgb(211, 54, 11);
+        opacity: 0.91;
+        position:fix;
+        width: 1080px;
+        height: 100px;
+        border-radius: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 300px;
+        
+        color: rgb(62, 34, 34);
+        padding: 0px;
+        resize: both;
+}
+.subscriptionbutton{
+   
+
+}
+footer li { 
+        color: #000;
+        display: inline-block
+}
+
+
+
+footer::before, footer::after{
+    content: "/";
+    font-size: 50px;
+    color: rgb(79, 11, 113);
+}
+.footer {
+    position:fix;
+    Color:white;
+    background: #25205B;
+    width: 1440px;
+    height: 144px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    border-radius: 10px;
+
+}
