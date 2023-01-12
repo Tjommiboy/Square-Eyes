@@ -34,13 +34,12 @@ nav ul {
 }
 .navflex{
     display: flex;
-    justify-content: space-around;
-    align-items: center;
 }
 
 .active {
     background-color: blueviolet;
-    color :white
+    color :white;
+    border-radius: 10px;
 }
 .logo {
    position:relative;
@@ -84,7 +83,8 @@ header {
     width: 260px;
     height: 400px;
     border-radius: 10px;
-    margin-top: 40px;
+    margin-top: 0px;
+    margin-left: 40px;
 }
 .Trending {
     background: conic-gradient(from 180deg at 50% 50%, rgba(74, 142, 157, 0.53) -179.77deg, #4A8E9D 156.82deg, rgba(74, 142, 157, 0.53) 180.23deg, #4A8E9D 516.82deg);
@@ -96,56 +96,12 @@ header {
     margin-left: auto;
     margin-right: auto; 
     color: rgb(62, 34, 34);
-    resize: both;
-    overflow: auto
-}
-.firstflex {
+    flex-wrap: wrap;
+    align-items: center;
     display: flex;
-    
-}
- 
-.collections {
-        background-color: rgba(12, 9, 1, 0.569);
-        width: 600px;
-        height: 265px;
-        margin-left: 44px;
-        margin-top: 20px;
-        position: relative;
-        border-radius: 10px;
-        color: rgb(62, 34, 34);
-        padding: px;
-        resize: both;
-        
-}
+    justify-content: space-around;
 
-.collections img{
-    width: 80%;
-    height: 100%;
-    border-radius: 10px;
-
-}
-
-
-.catagories {
-    background-color: rgba(12, 9, 1, 0.569);
-    width: 600px;
-    height: 265px;
-    position:absolute;
-    margin-left: 750px;
-    margin-top: 20px;
-    border-radius: 10px;
-    color: rgb(255, 10, 10);
-    
-}
-
-.catagories img{
-    width: 80%;
-    height: 100%;
-    border-radius: 10px;
-   
-}
-
-
+  }
 
 footer li { 
         color: #000;
@@ -176,16 +132,22 @@ footer::before, footer::after{
     background-color: red;
     text-decoration: none;
     font-size: 2em;
-}
+    
+ }
 
 
- /* Checkout-------------------------------------------------------------- */
+/* Checkout ---------------------------------------------------------- */
+/* Checkout ---------------------------------------------------------- */
+/* Checkout ---------------------------------------------------------- */
+/* Checkout ---------------------------------------------------------- */
 
  .Backgroundmovieset {
     position: relative;
     max-width: 1440px;
     margin-left: auto;
     margin-right: auto;
+    border-radius: 10px;
+    margin-top: 10px;
     
  }
 .Yourdetails {
@@ -194,7 +156,7 @@ footer::before, footer::after{
    margin-right: auto;
 }
 .Purshasedetails {
-   max-width: 80px;
+   max-width: 70px;
    margin-left: auto;
    margin-right: auto;
 
@@ -207,18 +169,12 @@ max-width: 1440px;
 }
  
 /* Movies--------------------------------------------------------------- */ 
+/* Movies--------------------------------------------------------------- */ 
+/* Movies--------------------------------------------------------------- */ 
+/* Movies--------------------------------------------------------------- */ 
+
 
 .movies {
-    background-color: rgb(144, 136, 135);
-    width: 400px;
-    height: 400px;
-    margin: 20px;
-    color: rgb(254, 248, 248);
-    resize: both;
-    overflow: auto
-}
-
-.movies{
     background: conic-gradient(from 180deg at 50% 50%, rgba(74, 142, 157, 0.53) -179.77deg, #4A8E9D 156.82deg, rgba(74, 142, 157, 0.53) 180.23deg, #4A8E9D 516.82deg);
     width: 1350px;
     height: 1365px;
@@ -227,8 +183,17 @@ max-width: 1440px;
     margin-left: auto;
     margin-right: auto; 
     border-radius: 10px;
+    margin: auto;
+    
+ 
+}
+.contentmod {
+    border-radius: 10px;
+    float: left;
+    margin: 20px;
     
 }
+
 .footermovies {
     Color:white;
     position:fix;
@@ -242,7 +207,9 @@ max-width: 1440px;
 
 
 /* ABOUT US----------------------------------------------------------- */
-
+/* ABOUT US----------------------------------------------------------- */
+/* ABOUT US----------------------------------------------------------- */
+/* ABOUT US----------------------------------------------------------- */
 .curtains {
     position: relative; 
     margin-left: auto;
@@ -262,9 +229,17 @@ max-width: 1440px;
     margin-right: auto;
     border-radius: 10px;
     margin-top: 10px;
-    
-}
+ }
 
+ .Aboutparagraph {
+      
+    
+ }
+
+
+/* CONTACT--------------------------------------------------------*/
+/* CONTACT--------------------------------------------------------*/
+/* CONTACT--------------------------------------------------------*/
 /* CONTACT--------------------------------------------------------*/
 
 .curtainscontact {
