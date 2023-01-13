@@ -130,10 +130,12 @@ footer::before, footer::after{
 }
  .subscription {
     background-color: red;
-    text-decoration: none;
-    font-size: 2em;
-    
- }
+    font-size: 3em;
+    position: absolute;
+}
+.sub {
+    position: absolute;
+}
 
 
 /* Checkout ---------------------------------------------------------- */
@@ -184,8 +186,13 @@ max-width: 1440px;
     margin-right: auto; 
     border-radius: 10px;
     margin: auto;
-    
+
+
  
+}
+.movies {
+   
+
 }
 .contentmod {
     border-radius: 10px;
