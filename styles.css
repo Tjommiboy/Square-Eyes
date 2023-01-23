@@ -9,11 +9,11 @@ body {
 h1 { font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
  color: rgb(0, 27, 12);
  }
- 
+ /*--------------------------------------------HEADER-------------------------------*/
  .active {
-     background-color: blueviolet;
+     background-color: rgba(137, 43, 226, 0.771);
      color :white;
-     border-radius: 10px;
+     border-radius: 5px;
  }
  .logo {
     position:relative;
@@ -27,7 +27,7 @@ h1 { font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
      background-image: url('iStock-516189065\ copy.jpg');
      background-size:cover;
      background-repeat: no-repeat;
-     border-radius: 10px;
+     border-radius: 5px;
      max-width: 1440px;
      padding-top: 10px;
     margin-left: auto;
@@ -68,7 +68,7 @@ nav {
     top: 34px;
     background-color: rgba(88, 70, 167, 0.73);
     z-index: 4;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 nav a {
     color: rgb(228, 227, 227);
@@ -127,7 +127,7 @@ nav a {
 .HomeH2 {
     position: relative;
     left: 104px;
-    top: 10px;
+    top: px;
 }
 
  .hero {
@@ -135,21 +135,29 @@ nav a {
      width: 1440px;
      height: 482px;
      margin: 20px;
-     border-radius: 10px;
+     border-radius: 5px;
      color: rgb(62, 34, 34);
      margin-left: auto;
      margin-right: auto;
      display: flex;
+     position: relative;
 }
 .HomeH2 {
-    position: relative;
-    left: 20px;
+    position: absolute;
+    left: 150px;
+    
     
 }
 .purple {
      width: 260px;
      height: 400px;
-     border-radius: 10px;
+     border-radius: 5px;
+    
+    position:absolute;
+    left: 111px;
+    top: 60px;
+
+
      
     
  }
@@ -163,26 +171,21 @@ nav a {
      height: 484px;
      left: 70px;
      top: 804px;
-     border-radius: 10px;
+     border-radius: 5px;
      margin-left: auto;
      margin-right: auto; 
      color: rgb(62, 34, 34);
      flex-wrap: wrap;
      align-items: center;
      display: flex;
-     justify-content: space-around;
+     justify-content: center;
  }
- .full-width_trending {
-    width: 100%;
-    position: relative;
-    left: 104px;
-    top: 10px;
-}
+
 
  .justereHOME{
     margin:27px;
-    border-radius: 10px;
-    flex: 1;
+    border-radius: 5px;
+   
  }
 
 /*---------------------------------Collection---CATEGORIES------------------------*/
@@ -194,7 +197,7 @@ nav a {
 .EQUALSPACE-ALIGN1 {
     background-image: url(images/Screenshot\ 2022-11-15\ at\ 17.38.30\ copy.png );
     padding: 80px 240px;
-    border-radius: 10px;
+    border-radius: 5px;
     margin: 10px;
     font-weight: bold;
     font-size: 30px;
@@ -206,8 +209,8 @@ nav a {
 
 .EQUALSPACE-ALIGN2 {
     background-image: url(images/Screenshot\ 2022-11-15\ at\ 17.53.34\ copy.png);
-    padding:80px 240px;
-    border-radius: 10px;
+    padding:80px 245px;
+    border-radius: 5px;
     margin: 10px;
     font-weight: bold;
     font-size: 30px;
@@ -249,24 +252,25 @@ nav a {
   
 }
 .bg-red {
-    background-color: rgba(255, 25, 0, 0.538);
-    opacity: 70%
+    background-color: rgba(255, 25, 0, 0.824);
+    
 }
 
  /*--------------------------------------FOOTER-------------------------------------*/
  footer li { 
-         color: #000;
-         display: inline-block
- }
+        
+    display: inline-block
+ 
+}
  
  
 
 .footerdiv{
     position: absolute;
-    font-size: 24px;
-    left: 4px;
-    top: 2px;
-    padding: 30px;
+    font-size: 15px;
+    left: px;
+    top: 50px;
+    padding: 20px;
 }
 
 
@@ -280,17 +284,17 @@ nav a {
      margin-left: auto;
      margin-right: auto;
      margin-top: 20px;
-     border-radius: 10px;
-     font-size: 15px;
-     color: rgb(79, 11, 113);
+     border-radius: 5px;
+
+     color: rgb(255, 255, 255);
 }
 .footerul{
     display: inline;
-    
-   
+    position: relative;
+    left: 700px;
+    font-size: 38px;
+    color: #767676;
 }
-
-
 
 
  
@@ -309,7 +313,7 @@ nav a {
      height: 620px;
      margin-left: auto;
      margin-right: auto;
-     border-radius: 10px;
+     border-radius: 5px;
      margin-top: 10px;
     }
 
@@ -320,7 +324,7 @@ nav a {
     left: 450px;
     top: 85px;
    background-color: #25205b48;
-   border-radius: 10px;
+   border-radius: 5px;
     
  }
 .form__input{  
@@ -330,13 +334,13 @@ nav a {
 
 .btncheckout {
     position:absolute;   
-    left: 827px;
+    left: 851px;
     top: 303px;
     text-decoration: none;
     font-weight: bold;
     color: #fff;
-    padding: 20px;
-    border-radius: 10px;
+    padding: 10px;
+    border-radius: 5px;
 }
  
 
@@ -350,46 +354,37 @@ nav a {
  
  
  .movies {
-     background: conic-gradient(from 180deg at 50% 50%, rgba(74, 142, 157, 0.53) -179.77deg, #4A8E9D 156.82deg, rgba(74, 142, 157, 0.53) 180.23deg, #4A8E9D 516.82deg);
-     width: 1350px;
-     height: 1580px;
+     background: conic-gradient(from 180deg at 50% 50%, rgba(74, 142, 157, 0.53) -179.77deg, #4a8e9d79 156.82deg, rgba(74, 142, 157, 0.53) 180.23deg, #4a8e9d79 516.82deg);
+     width: 1440px;
+     height: 1380px;
      left: 70px;
      top: 331px;
      margin-left: auto;
      margin-right: auto; 
-     border-radius: 10px;
-     margin: auto;
-     padding: 15px;
+     border-radius: 5px;
+
+     
  }
 
  .contentmod {
-   display: flex;
-   flex-wrap: wrap;
-   
-
-   
+     border-radius: 5px;
+     margin-left: auto;
+     margin-right: auto; 
+     color: rgb(62, 34, 34);
+     flex-wrap: wrap;
+     align-items: center;
+     display: flex;
+     justify-content: center;
    
  }
  .justere{
-    margin: 10px;
-    border-radius: 10px;
-    flex: 1;
-    width: 260px;
-    height: 460px;
- }
- .footermovies {
-     Color:white;
-     position:fix;
-     background: #25205B;
-     width: 1440px;
-     height: 144px;
-     margin-left: auto;
-     margin-right: auto;
-     border-radius: 10px;
-     margin-top: 20px;
+    margin: 15px;
+    border-radius: 5px;
+   
+   
    
  }
- 
+
  
  /* ABOUT US----------------------------------------------------------- */
  /* ABOUT US----------------------------------------------------------- */
@@ -401,21 +396,8 @@ nav a {
      margin-right: auto;  
      max-width: 1350px;
      margin-top: 10px;
-     border-radius: 10px;
+     border-radius: 5px 
  }
- 
- .footeraboutus {
-    
-     Color:white;
-     background: #25205B;
-     width: 1440px;
-     height: 144px;
-     margin-left: auto;
-     margin-right: auto;
-     border-radius: 10px;
-     margin-top: 10px;
-  }
- 
 
  
  
@@ -429,16 +411,83 @@ nav a {
      max-width: 1350px;
      margin-left: auto;
      margin-right: auto;
-     border-radius: 10px;
+     border-radius: 5px;
      margin-top: 10px;
  }
- .footercontact {
-     Color:white;
-     background: #25205B;
-     width: 1440px;
-     height: 144px;
+
+
+ /*-------------------------------PRODUCTPAGE-DUNE-------------------*/
+  /*-------------------------------PRODUCTPAGE-DUNE-------------------*/
+   /*-------------------------------PRODUCTPAGE-DUNE-------------------*/
+    /*-------------------------------PRODUCTPAGE-DUNE-------------------*/
+
+.Prod_Back_Dune {
+     background-image: url(images/DUNE\ BACKGROUND.png);
+     position: relative;
+     max-width: 1440px;
+     height: 620px;
      margin-left: auto;
      margin-right: auto;
-     margin-top: 10px;
-     border-radius: 10px;
+     border-radius: 5px;
+     object-fit: cover;
+}
+
+.DUNEPICture {
+    
+    position: absolute;
+    left: 50px;
+    top: 50px;
+}
+
+.purchase {
+    position:absolute;   
+    left: 360px;
+    top: 435px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #fff;
+    padding: 10px;
+    border-radius: 50px;
+}
+ .Synopsis {
+    position: relative;
+    max-width: 300px;
+    color: #fff;
+    left: 360px;
+    top:200px
  }
+
+
+ /*----------------------------PurchaseSuccess------------------------*/
+ /*----------------------------PurchaseSuccess------------------------*/
+ /*----------------------------PurchaseSuccess------------------------*/
+ /*----------------------------PurchaseSuccess------------------------*/
+
+
+.PurchaseSuccess {
+   background-image: url(images/movie\ 2020\ 49.jpg);
+   position: relative;
+     max-width: 1440px;
+     height: 620px;
+     margin-left: auto;
+     margin-right: auto;
+     border-radius: 5px;
+
+
+}
+.Successbutton {
+    position:absolute;    
+    left: 360px;
+    top: 435px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #fff;
+    padding: 10px;
+    border-radius: 50px;
+    background-color: greenyellow;
+    
+
+}
+.Success {
+    position: relative;
+}
