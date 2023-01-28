@@ -1,8 +1,34 @@
+/*VARIABLES*/
+
+
+:root {
+    --border-radius:5px;
+    --full-width: 100%;
+    --half-width: 50%;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Verdana', Courier, monospace;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: var(--full-width)
+}
+
+img {
+    max-width: var(--full-width);
+    width: auto;
+    height: auto;
+}
+
+
+
 body {
     background: conic-gradient(from 180deg at 50% 50%, #fd9f084b 0deg, rgba(253, 160, 8, 0) 181.87deg, #fd9f084b 360deg);
-     font-family: 'Verdana', Courier, monospace;
-     margin: 0%;
-    
+  max-width: 100%;
     
     }
      
@@ -13,25 +39,27 @@ h1 { font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
  .active {
      background-color: rgba(137, 43, 226, 0.771);
      color :white;
-     border-radius: 5px;
+      border-radius: var(--border-radius) ;
  }
  .logo {
     position:relative;
     left: 40px;
     bottom: 10spx;
     z-index: 3;
-    max-width: 400px;
+    max-width: 324px;
 
  }
  header {
+    
      background-image: url('iStock-516189065\ copy.jpg');
      background-size:cover;
      background-repeat: no-repeat;
-     border-radius: 5px;
+     border-radius: var(--border-radius) ;
      max-width: 1440px;
      padding-top: 10px;
     margin-left: auto;
      margin-right: auto;
+     
  }
 
  header{
@@ -50,7 +78,7 @@ h1 { font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
    width: 1440px;
    height: 37px;
    left: 0px;
-   top: 232px;
+   top: 149px;
    background: rgba(24, 17, 82, 0.8);
    opacity: 0.8;
    z-index: 1;
@@ -59,7 +87,14 @@ h1 { font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
    align-items: center;
    justify-content: center;
    }
+.connectinglovers {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 40px;
+   
 
+}
 
 
 /*------------------------------NAVIGATION-----------------------------*/
@@ -68,7 +103,7 @@ nav {
     top: 34px;
     background-color: rgba(88, 70, 167, 0.73);
     z-index: 4;
-    border-radius: 5px;
+    border-radius: var(--border-radius) ;
 }
 nav a {
     color: rgb(228, 227, 227);
@@ -105,7 +140,7 @@ nav { position: absolute;
 }
 
 nav a {
-    display:  block;
+    display:  inline-block;
     right: 0px;
 }
 
@@ -125,107 +160,118 @@ nav a {
 
  /*------------------------------------HERO----------------------------------*/
 .HomeH2 {
-    position: relative;
-    left: 104px;
-    top: px;
+    position: absolute;
+    left: 135px;
+    font-size:14px ;
+    bottom: 18px;
+    
 }
 
  .hero {
      background: conic-gradient(from 180deg at 50% 50%, #4e0f3cc2 -232.5deg, #767676 101.25deg, #4e0f3cc2 127.5deg, #767676 461.25deg);
-     width: 1440px;
+     max-width: 100%;
+     max-width: 1440px;
      height: 482px;
      margin: 20px;
-     border-radius: 5px;
+     border-radius: var(--border-radius) ;
      color: rgb(62, 34, 34);
      margin-left: auto;
      margin-right: auto;
      display: flex;
      position: relative;
+     border: 1px solid rgba(255, 0, 255, 0.548);
 }
-.HomeH2 {
-    position: absolute;
-    left: 150px;
+
     
-    
-}
+
 .purple {
      width: 260px;
      height: 400px;
-     border-radius: 5px;
-    
-    position:absolute;
-    left: 111px;
-    top: 60px;
+     border-radius: var(--border-radius) ;
+     border: 12px solid rgba(80, 11, 80, 0.615);
+     position:absolute;
+     left: 82px;
+     top: 30px;
+}
 
-
-     
-    
- }
-
+.hero-video {
+    position: absolute;
+    width: 921px;
+    height: 440px;
+    left: 416px;
+    margin: 20px;
+    border-radius: var(--border-radius);
+    }
 
   /*----------------------------------TRENDING---------------------------------*/
  .Trending {
      background: conic-gradient(from 180deg at 50% 50%, rgba(74, 142, 157, 0.53) -179.77deg,
     #4a8e9d78 156.82deg, rgba(74, 142, 157, 0.53) 180.23deg, #4a8e9d78 516.82deg);
      width: 1440px;
+     max-width: 100%;
      height: 484px;
      left: 70px;
      top: 804px;
-     border-radius: 5px;
+     border-radius: var(--border-radius) ;
+     border: 2px solid #699D9A;
      margin-left: auto;
      margin-right: auto; 
      color: rgb(62, 34, 34);
-     flex-wrap: wrap;
+   
+  
      align-items: center;
      display: flex;
-     justify-content: center;
+     justify-content: space-around;
+     
  }
 
 
  .justereHOME{
-    margin:27px;
-    border-radius: 5px;
+    margin: 20px;
+    border-radius: var(--border-radius) ;
+    border: 12px solid #699D9A;
    
  }
 
 /*---------------------------------Collection---CATEGORIES------------------------*/
 
-.Equalspace {
+.equalspace {
   display: flex;
+  grid-template-rows: 1fr ;
+  grid-gap: 10px;
+  justify-content: center;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 15px;
+}
+
+.collections {
+    background-image: url(images/Screenshot\ 2022-11-15\ at\ 17.38.30\ copy.png);
+    height: 170px;
+    width: 700px;
+    background-size: cover;
+    border-radius: var(--border-radius) ;
+    
+}
+.categories {
+    background-image: url(images/Screenshot\ 2022-11-15\ at\ 17.53.34\ copy.png);
+    height: 170px;
+    width: 700px;
+    background-size: cover;
+    border-radius: var(--border-radius) ;
   
 }
-.EQUALSPACE-ALIGN1 {
-    background-image: url(images/Screenshot\ 2022-11-15\ at\ 17.38.30\ copy.png );
-    padding: 80px 240px;
-    border-radius: 5px;
-    margin: 10px;
-    font-weight: bold;
-    font-size: 30px;
-    display:flex
- 
- 
-    
+.h3_text{
+   color: rgb(255, 249, 249);
+   font-weight: bold;
+   text-decoration: none;
+   display: flex;
+   justify-content: center;
+   font-size: 30px;
+
+   
+   
+
 }
-
-.EQUALSPACE-ALIGN2 {
-    background-image: url(images/Screenshot\ 2022-11-15\ at\ 17.53.34\ copy.png);
-    padding:80px 245px;
-    border-radius: 5px;
-    margin: 10px;
-    font-weight: bold;
-    font-size: 30px;
-    display: flex;
-    
-  }
-
-  .fontstyling{
-    background-color: rgba(0, 0, 0, 0.253);
-    color: whitesmoke;
-    text-decoration: none;
-    
-  }
-
-
 
 
  /*----------------------------------SUBSCRIBE-BUTTON-----------------------------*/
@@ -240,7 +286,7 @@ nav a {
 
 .btn {
     width: 1440px;
-    border-radius: 5px;
+    border-radius: var(--border-radius) ;
     height: 80px;
     color: rgb(255, 255, 255);
     display: flex;
@@ -252,14 +298,14 @@ nav a {
   
 }
 .bg-red {
-    background-color: rgba(255, 25, 0, 0.824);
+    background-color: rgba(105, 2, 146, 0.635);
     
 }
 
  /*--------------------------------------FOOTER-------------------------------------*/
  footer li { 
         
-    display: inline-block
+    display: flex;
  
 }
  
@@ -268,8 +314,8 @@ nav a {
 .footerdiv{
     position: absolute;
     font-size: 15px;
-    left: px;
-    top: 50px;
+    left: 22px;
+    top: 70px;
     padding: 20px;
 }
 
@@ -280,19 +326,21 @@ nav a {
      background: #25205B;
      opacity: 95%;
      width: 1440px;
+     max-width: 100%;
      height: 144px;
      margin-left: auto;
      margin-right: auto;
      margin-top: 20px;
-     border-radius: 5px;
-
+     border-radius: var(--border-radius) ;
      color: rgb(255, 255, 255);
+     display:flex ;
+     justify-content: center;
 }
 .footerul{
-    display: inline;
+  
     position: relative;
-    left: 700px;
-    font-size: 38px;
+    left: 600px;
+    font-size: 30px;
     color: #767676;
 }
 
@@ -313,7 +361,7 @@ nav a {
      height: 620px;
      margin-left: auto;
      margin-right: auto;
-     border-radius: 5px;
+     border-radius: var(--border-radius) ;
      margin-top: 10px;
     }
 
@@ -323,8 +371,8 @@ nav a {
     display: flex;
     left: 450px;
     top: 85px;
-   background-color: #25205b48;
-   border-radius: 5px;
+    background-color: #25205b48;
+    border-radius: var(--border-radius) ;
     
  }
 .form__input{  
@@ -340,7 +388,7 @@ nav a {
     font-weight: bold;
     color: #fff;
     padding: 10px;
-    border-radius: 5px;
+    border-radius: var(--border-radius) ;
 }
  
 
@@ -351,36 +399,30 @@ nav a {
  /* Movies--------------------------------------------------------------- */ 
  /* Movies--------------------------------------------------------------- */ 
  /* Movies--------------------------------------------------------------- */ 
- 
- 
+
  .movies {
      background: conic-gradient(from 180deg at 50% 50%, rgba(74, 142, 157, 0.53) -179.77deg, #4a8e9d79 156.82deg, rgba(74, 142, 157, 0.53) 180.23deg, #4a8e9d79 516.82deg);
      width: 1440px;
+     max-width: 100%;
      height: 1380px;
      left: 70px;
      top: 331px;
      margin-left: auto;
      margin-right: auto; 
-     border-radius: 5px;
-
-     
- }
-
- .contentmod {
-     border-radius: 5px;
-     margin-left: auto;
-     margin-right: auto; 
-     color: rgb(62, 34, 34);
-     flex-wrap: wrap;
-     align-items: center;
+     border-radius: var(--border-radius) ;
+     border: 2px solid #699D9A;
      display: flex;
-     justify-content: center;
-   
- }
- .justere{
-    margin: 15px;
-    border-radius: 5px;
-   
+
+
+    
+
+    }
+.justere{
+    margin:20px;
+    border-radius: var(--border-radius) ;
+    border: 12px solid #699D9A;
+    justify-content: center;
+ 
    
    
  }
@@ -394,12 +436,32 @@ nav a {
      position: relative; 
      margin-left: auto;
      margin-right: auto;  
-     max-width: 1350px;
+     width: 1440px;
+     max-width: 100%;
+
      margin-top: 10px;
-     border-radius: 5px 
+     border-radius: var(--border-radius) ;
+ }
+ .Aboutparagraph {
+    position: relative;
+    color: #fff;
+    max-width: 460px;
+    top: 400px;
+    left: 340px;
+    z-index: 3;
+
+ }
+ .aboutus-h2 {
+    position: absolute;
+    color: #fff;
+    max-width: 460px;
+    top: 340px;
+    left: 340px;
+    z-index: 4;
+
+
  }
 
- 
  
  /* CONTACT--------------------------------------------------------*/
  /* CONTACT--------------------------------------------------------*/
@@ -408,10 +470,11 @@ nav a {
  
  .curtainscontact {
      position: relative;
-     max-width: 1350px;
+     width: 1440px;
+     max-width: 100%;
      margin-left: auto;
      margin-right: auto;
-     border-radius: 5px;
+     border-radius: var(--border-radius) ;
      margin-top: 10px;
  }
 
@@ -428,20 +491,23 @@ nav a {
      height: 620px;
      margin-left: auto;
      margin-right: auto;
-     border-radius: 5px;
+     border-radius: var(--border-radius) ;
      object-fit: cover;
+     align-items: center;
+
 }
 
 .DUNEPICture {
     
     position: absolute;
     left: 50px;
-    top: 50px;
+    top: 80px;
+    
 }
 
 .purchase {
     position:absolute;   
-    left: 360px;
+    left: 380px;
     top: 435px;
     text-decoration: none;
     font-weight: bold;
@@ -453,7 +519,7 @@ nav a {
     position: relative;
     max-width: 300px;
     color: #fff;
-    left: 360px;
+    left: 380px;
     top:200px
  }
 
@@ -466,28 +532,77 @@ nav a {
 
 .PurchaseSuccess {
    background-image: url(images/movie\ 2020\ 49.jpg);
+ 
    position: relative;
-     max-width: 1440px;
-     height: 620px;
-     margin-left: auto;
-     margin-right: auto;
-     border-radius: 5px;
+   max-width: 1440px;
+   height: 620px;
+   margin-left: auto;
+   margin-right: auto;
+   border-radius: var(--border-radius) ;
+   background-repeat: no-repeat;
+   background-size: cover;
+   
 
 
 }
 .Successbutton {
-    position:absolute;    
-    left: 360px;
-    top: 435px;
+    position:fixed;    
+    left: 600px;
+    top: 1000px;
     text-decoration: none;
     font-weight: bold;
     color: #fff;
     padding: 10px;
     border-radius: 50px;
     background-color: greenyellow;
-    
+    border: 2px black;
+}
+
+.PurchaseSuccessbtn {  
+    position:fixed;    
+    left: 200px;
+    top: 900px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #fff;
+    padding: 30px 600px;
+    border-radius: 5px;
+    background-color: rgba(172, 255, 47, 0.826);
+    border: 2px black;
 
 }
+
 .Success {
     position: relative;
+}
+
+
+
+/*--------------UNDERCONSTRUCTION-------------------------------*/
+/*--------------UNDERCONSTRUCTION-------------------------------*/
+/*--------------UNDERCONSTRUCTION-------------------------------*/
+/*--------------UNDERCONSTRUCTION-------------------------------*/
+
+.under-constructiom-images {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 40%;
+
+
+}
+.under-construction-text {
+    position:absolute;
+    font-size: 50px;
+    font-weight: bold;
+    color: #fff;
+  left: 400px;
+ bottom: 400px; ;
+}
+.main_collections {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    border-radius: var(--border-radius);
+
 }

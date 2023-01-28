@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="Square Eyes" content="Movie Streaming Service">
+    <meta name="description" content="Homepage for Square Eyes">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Square Eyes</title>
     <link href="styles.css" rel="stylesheet">
@@ -11,68 +11,62 @@
 
 </head>
 <body>
-    <Header>
-       
-        <div>
-           <input type="checkbox" id="menu-checkbox">
-           <label for="menu-checkbox"class="hamburger-icon"></label> <i class="fa-solid fa-bars"></i></label>
+     <Header>
            <a href="index.html">
-           <h1></h1> <img src="images/Group 2.png" class="logo" alt="picture of site logo"></a></h1>
-           
+           <img src="images/Group 2.png" class="logo" alt="picture of site logo">
+           <input id="hamburger" type="checkbox"/>
+           <label for="hamburger">
+             <i class="fa-solid fa-bars"></i>
            <nav>
-              <ul>
-                 <li><a href="Index.html"class="active">Home</a> </li>
-                 <li><a href="Movies.html">Movies</a></li>
-                 <li><a href="About Us.html">About Us</a></li>
-                 <li><a href="Contact.html">Contact</a></li>
-                 <li><a href="checkout.html"><i class="fa-sharp fa-solid fa-cart-shopping"></i></a></li>
-               </ul>
+               <ul>
+                <li><a href="Index.html"class="active">Home</a> </li>
+                <li><a href="Movies.html">Movies</a></li>
+                <li><a href="About Us.html">About Us</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+                <li><a href="checkout.html"><i class="fa-sharp fa-solid fa-cart-shopping"><span class="hide">cart icon</span></i></a></li>
+             </ul>
             </nav>
             <div class="full-width Connecting">
-                <p>Connecting Film Lovers</p>   
+                <p class="connectinglovers" >Connecting Film Lovers</p>   
             </div> 
-        </div>    
-    </Header>
-        <Section class="hero">
-         <div class="HomeH2"> 
+        </Header>
+         <main id="main-container">
+          <Section class="hero">
+           <div class="HomeH2"> 
              <H2>New Release</H2>
-          </div>
+           </div>
             <div>
-                <a href="https://www.youtube.com/watch?v=AuXK8ZbTmLk&t=2s"></a>
+                <video src="Images/videoplayback (1).mp4" class="hero-video" alt="trailer for purple rain">
             </div>
             <img src="Images/Screenshot 2022-11-22 at 11.34.01 copy.png"alt="poster of Purple Rain movie" class="purple">
-    </Section>
-     <Section>
-        <Div class="Trending">
-          <div>
+         </Section>
+        <Section>
+         <Div class="Trending">
+           <div>
             <a href="productpage.html"><img src="images/Aliens Resized.png" class="justereHOME" alt="Movieposter of Aliens"></a>
             <a href="productpage.html"><img src="images/Dune resized.png" class="justereHOME" alt="Movieposter of Dune"></a>
             <a href="productpage.html"><img src="images/Scream Resized.png" class="justereHOME" alt="Movieposter of Scream"></a>
             <a href="productpage.html"><img src="images/ Once upon a time resized.png" class="justereHOME" alt="Movieposter of Once upon a time"></a>
            </div>
-        </Div>
-    </Section>  
-        <div class="full-width flex">
-            <div class="Equalspace">
-                <div CLASS="EQUALSPACE-ALIGN1">
-                <a href="collections.html"class="fontstyling">COLLECTIONS</a>
+         </Div>
+        </Section>  
+            <div class="equalspace">
+                <div CLASS="collections">
+                    <h3><a href="collections.html"class="h3_text">Collections</h3>
                 </div>
-                <div CLASS="EQUALSPACE-ALIGN2">
-                <a href="catagories.html"class="fontstyling">CATEGORIES</a>
+                <div CLASS="categories">
+                    <h3><a href="categories.html"class="h3_text">Categories</h3>
                 </div>
             </div>
-           
-        </div>
-        
-    
-        
-        <div class="full-width flex">
+     
+        <div class="flex">
             <a class="btn bg-red" href="checkout.html">SUBSCRIBE</a>
         </div>
-   
-<footer class="footer">
+    </main>
+  <footer class="footer">
     <div class="footerdiv">
-    Square Eyes Copyright &copy;
+        <p></p>Copyright @ Square Eyes 2022
+        Privacy & Legal;</p>
         <ul class="footerul">
             <li><a href="https://www.facebook.com"><i class="fa-brands fa-facebook"></i></a></li>
             <li><a href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a></li>
