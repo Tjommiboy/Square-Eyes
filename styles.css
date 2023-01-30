@@ -5,6 +5,8 @@
     --border-radius:5px;
     --full-width: 100%;
     --half-width: 50%;
+    --margin-top: 20px;
+   --border:1px solid red;
 }
 
 * {
@@ -15,7 +17,9 @@
 }
 
 html, body {
-    width: var(--full-width)
+    width: var(--full-width);
+    
+    
 }
 
 img {
@@ -28,7 +32,10 @@ img {
 
 body {
     background: conic-gradient(from 180deg at 50% 50%, #fd9f084b 0deg, rgba(253, 160, 8, 0) 181.87deg, #fd9f084b 360deg);
-  max-width: 100%;
+    background-size: 100%;
+   
+ 
+
     
     }
      
@@ -40,37 +47,43 @@ h1 { font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
      background-color: rgba(137, 43, 226, 0.771);
      color :white;
       border-radius: var(--border-radius) ;
+      border: var(--border);
  }
  .logo {
     position:relative;
-    left: 40px;
+    left: 80px;
     bottom: 10spx;
     z-index: 3;
     max-width: 324px;
+    border: var(--border);
 
  }
  header {
-    
+    position: relative;
      background-image: url('iStock-516189065\ copy.jpg');
      background-size:cover;
      background-repeat: no-repeat;
      border-radius: var(--border-radius) ;
      max-width: 1440px;
+     height: 214px;
      padding-top: 10px;
-    margin-left: auto;
+     margin-left: auto;
      margin-right: auto;
+     border: var(--border);
      
  }
 
  header{
     color: #fff; 
     position: relative;
+    border: var(--border);
 }
 .squareyeslogo {
     position:absolute;
     left: px;
     z-index: 2;
     size: 100%;
+    border: var(--border);
 }
 
 .Connecting{
@@ -86,77 +99,100 @@ h1 { font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
    display: flex;
    align-items: center;
    justify-content: center;
+   border: var(--border);
    }
 .connectinglovers {
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 40px;
+    border: var(--border);
    
 
 }
 
 
-/*------------------------------NAVIGATION-----------------------------*/
+/*------------------------------NAVIGATION----Mobil-------------------------*/
+
+
+#menu-checkbox {
+    float: left;
+    border: var(--border);
+}
+.fas {
+    position: relative;
+    float: left;
+    font-size: 24px;
+    left: 20px;
+    border: var(--border);
+}
+
+#menu-checkbox:checked ~ nav {
+    display: block;
+    
+}
+nav,#menu-checkbox{
+    display: none;
+   
+}
 nav {
     position: absolute;
-    top: 34px;
-    background-color: rgba(88, 70, 167, 0.73);
-    z-index: 4;
+    z-index: 3;
     border-radius: var(--border-radius) ;
+    padding: 20px;
+    display: flex;
+    grid-template-columns: 1fr ;   
+    grid-gap: 80px;
+    background-color: #25205B;
+    opacity: 0.9;
+    top:40px
+    
+    
+    
+    
 }
+@media (min-width:600px) {
+    nav {
+        display: block;
+        
+    }
+}
+
+/*------------------------------NAV OLD-------Desktop------------------------*/
+nav {
+   
+    position: absolute;
+    z-index: 3;
+    border-radius: var(--border-radius) ;
+    padding: 20px;
+    display: flex;
+    grid-template-columns: 1fr ;   
+    grid-gap: 80px;
+    background-color: #25205B;
+    opacity: 0.9;
+    top:40px
+    
+    
+}
+
 nav a {
-    color: rgb(228, 227, 227);
+    color: rgb(254, 242, 242);
     text-decoration: none;
-    padding:10px ;
+    padding:5px ;
     font-weight: bold;
+    font-size:17px;
     z-index: 4;
-}     
+    display:block;
+    border: var(--border);
 
-
+}
 
 nav a:hover { 
-    text-decoration: underline;
+    text-decoration :underline;
 }
 
-nav ul { 
-    padding: 20px;
-
-}
-
-/*-----------------------------NAV_FLEX--------------------------*/
 
 
-nav {
-    display: none;
-
-} 
-
- #menu-checkbox:checked ~ nav {
-    display: block;
- }
-nav { position: absolute;
- 
-}
-
-nav a {
-    display:  inline-block;
-    right: 0px;
-}
-
-@media (min-width: 600px) {
-    nav{
-    display:block;
-    position:static;
-    }
-.hamburger-icon{
-    display: none;
-}
-nav a {
-    display: inline-block;
-   
-}
-}
 
  /*------------------------------------HERO----------------------------------*/
 .HomeH2 {
@@ -164,6 +200,7 @@ nav a {
     left: 135px;
     font-size:14px ;
     bottom: 18px;
+    border: var(--border);
     
 }
 
@@ -178,8 +215,10 @@ nav a {
      margin-left: auto;
      margin-right: auto;
      display: flex;
+     flex-wrap: wrap;
      position: relative;
      border: 1px solid rgba(255, 0, 255, 0.548);
+     border: var(--border);
 }
 
     
@@ -192,15 +231,18 @@ nav a {
      position:absolute;
      left: 82px;
      top: 30px;
+     border: var(--border);
+    
 }
 
 .hero-video {
     position: absolute;
-    width: 921px;
+    width: 501px;
     height: 440px;
     left: 416px;
     margin: 20px;
     border-radius: var(--border-radius);
+    border: var(--border);
     }
 
   /*----------------------------------TRENDING---------------------------------*/
@@ -217,12 +259,10 @@ nav a {
      margin-left: auto;
      margin-right: auto; 
      color: rgb(62, 34, 34);
-   
-  
      align-items: center;
      display: flex;
      justify-content: space-around;
-     
+     border: var(--border);
  }
 
 
@@ -230,6 +270,7 @@ nav a {
     margin: 20px;
     border-radius: var(--border-radius) ;
     border: 12px solid #699D9A;
+    
    
  }
 
@@ -241,7 +282,8 @@ nav a {
   grid-gap: 10px;
   justify-content: center;
   grid-template-columns: 1fr 1fr;
-  margin-top: 15px;
+  margin-top: var(--margin-top);
+  border: var(--border);
 }
 
 .collections {
@@ -250,6 +292,7 @@ nav a {
     width: 700px;
     background-size: cover;
     border-radius: var(--border-radius) ;
+    border: var(--border);
     
 }
 .categories {
@@ -258,6 +301,7 @@ nav a {
     width: 700px;
     background-size: cover;
     border-radius: var(--border-radius) ;
+    border: var(--border);
   
 }
 .h3_text{
@@ -266,7 +310,8 @@ nav a {
    text-decoration: none;
    display: flex;
    justify-content: center;
-   font-size: 30px;
+   font-size: 60px;
+   border: var(--border);
 
    
    
@@ -279,10 +324,13 @@ nav a {
     display: flex;
     justify-content: center;
     padding-top: 15px;
+    border: var(--border);
 }
 .full-width {
     width: 100%;
+    border: var(--border);
 }   
+
 
 .btn {
     width: 1440px;
@@ -295,53 +343,50 @@ nav a {
     text-decoration: none;
     font-size: 30px;
     font-weight: bold;
+    border: var(--border);
   
 }
 .bg-red {
     background-color: rgba(105, 2, 146, 0.635);
     
+    
 }
 
  /*--------------------------------------FOOTER-------------------------------------*/
- footer li { 
-        
-    display: flex;
- 
-}
- 
- 
 
-.footerdiv{
+.footer_list{
+    display: flex;
+    justify-content: center;
+    grid-template-columns: 1fr;
+    grid-gap: 30px;
+    grid-gap:px;
+    font-size: 40px;
+    color: #ffffff;
+    border: var(--border);
+
+}
+
+.footer_paragraph {
     position: absolute;
-    font-size: 15px;
-    left: 22px;
-    top: 70px;
-    padding: 20px;
+    font-size: 10px;
+    left: px;
+    top: 120px;
+    padding: px;
 }
 
 
  .footer {
      position:relative;
-     Color:white;
      background: #25205B;
-     opacity: 95%;
      width: 1440px;
      max-width: 100%;
      height: 144px;
      margin-left: auto;
      margin-right: auto;
-     margin-top: 20px;
+     margin-top: var(--margin-top);
      border-radius: var(--border-radius) ;
      color: rgb(255, 255, 255);
-     display:flex ;
-     justify-content: center;
-}
-.footerul{
-  
-    position: relative;
-    left: 600px;
-    font-size: 30px;
-    color: #767676;
+     border: var(--border);
 }
 
 
@@ -355,14 +400,15 @@ nav a {
  
  .Backgroundmovieset {
     background-image: url(images/Screenshot\ 2022-11-15\ at\ 19.21.05\ copy.png);
-    
+    background-size: cover;
      position: relative;
      max-width: 1440px;
-     height: 620px;
+     height: 820px;
      margin-left: auto;
      margin-right: auto;
      border-radius: var(--border-radius) ;
-     margin-top: 10px;
+     margin-top: var(--margin-top);
+     background-repeat: no-repeat;
     }
 
 .Yourdetails {
@@ -404,7 +450,7 @@ nav a {
      background: conic-gradient(from 180deg at 50% 50%, rgba(74, 142, 157, 0.53) -179.77deg, #4a8e9d79 156.82deg, rgba(74, 142, 157, 0.53) 180.23deg, #4a8e9d79 516.82deg);
      width: 1440px;
      max-width: 100%;
-     height: 1380px;
+     height: 1400px;
      left: 70px;
      top: 331px;
      margin-left: auto;
@@ -412,16 +458,19 @@ nav a {
      border-radius: var(--border-radius) ;
      border: 2px solid #699D9A;
      display: flex;
+     flex-wrap:wrap;
+     justify-content: center;
+     
+     margin-top: var(--margin-top);
+ }
 
 
     
-
-    }
 .justere{
     margin:20px;
     border-radius: var(--border-radius) ;
     border: 12px solid #699D9A;
-    justify-content: center;
+ 
  
    
    
@@ -437,13 +486,13 @@ nav a {
      margin-left: auto;
      margin-right: auto;  
      width: 1440px;
+     height: 900px;
      max-width: 100%;
-
      margin-top: 10px;
      border-radius: var(--border-radius) ;
  }
  .Aboutparagraph {
-    position: relative;
+    position: absolute;
     color: #fff;
     max-width: 460px;
     top: 400px;
@@ -469,13 +518,14 @@ nav a {
  /* CONTACT--------------------------------------------------------*/
  
  .curtainscontact {
-     position: relative;
-     width: 1440px;
-     max-width: 100%;
-     margin-left: auto;
-     margin-right: auto;
-     border-radius: var(--border-radius) ;
-     margin-top: 10px;
+    position: relative; 
+    margin-left: auto;
+    margin-right: auto;  
+    width: 1440px;
+    height: 900px;
+    max-width: 100%;
+    margin-top: 10px;
+    border-radius: var(--border-radius) ;
  }
 
 
@@ -486,29 +536,31 @@ nav a {
 
 .Prod_Back_Dune {
      background-image: url(images/DUNE\ BACKGROUND.png);
+     background-size: contain;
      position: relative;
      max-width: 1440px;
-     height: 620px;
+     height: 820px;
      margin-left: auto;
      margin-right: auto;
      border-radius: var(--border-radius) ;
-     object-fit: cover;
      align-items: center;
+     margin-top: var(--margin-top);
 
 }
 
+
 .DUNEPICture {
-    
     position: absolute;
     left: 50px;
     top: 80px;
-    
+   
 }
+
 
 .purchase {
     position:absolute;   
     left: 380px;
-    top: 435px;
+    top: 410px;
     text-decoration: none;
     font-weight: bold;
     color: #fff;
@@ -520,7 +572,7 @@ nav a {
     max-width: 300px;
     color: #fff;
     left: 380px;
-    top:200px
+    top:140px
  }
 
 
@@ -535,7 +587,7 @@ nav a {
  
    position: relative;
    max-width: 1440px;
-   height: 620px;
+   height: 920px;
    margin-left: auto;
    margin-right: auto;
    border-radius: var(--border-radius) ;
@@ -554,7 +606,7 @@ nav a {
     color: #fff;
     padding: 10px;
     border-radius: 50px;
-    background-color: greenyellow;
+    background-color: rgb(98, 163, 0);
     border: 2px black;
 }
 
@@ -567,7 +619,7 @@ nav a {
     color: #fff;
     padding: 30px 600px;
     border-radius: 5px;
-    background-color: rgba(172, 255, 47, 0.826);
+    background-color: rgb(18, 150, 0);
     border: 2px black;
 
 }
@@ -588,6 +640,7 @@ nav a {
     display: flex;
     justify-content: center;
     width: 40%;
+    margin-top: var(--margin-top);
 
 
 }
