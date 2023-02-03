@@ -840,6 +840,7 @@ color: #FFFFFF;
     display: flex;
     justify-content: center;
     border-radius: var(--border-radius);
+    margin-top: var(--margin-top);
     }
     .collections_construction {
         background-image: url(images/Collections.jpg);
