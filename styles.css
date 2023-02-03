@@ -133,13 +133,10 @@ h1 { font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 24px;
     left: 20px;
     border: var(--border);
-  
+   
 }
 
-#menu-checkbox:checked ~ nav {
-    display: block;
-    
-}
+
 nav,#menu-checkbox{
     display: none;
    
@@ -155,16 +152,10 @@ nav {
     z-index: 3;
     border-radius: var(--border-radius);
     padding: 1px;
-    display: none;
     grid-template-columns: 1fr;
     grid-gap: 80px;
     background-color: #25205b;
-    
-
-    
-    
-    
-}
+    }
 
 nav a {
     color: rgb(254, 242, 242);
@@ -350,6 +341,11 @@ nav a:hover {
     
     
 }
+.bg-purp {
+    background-color: rgb(108, 2, 146);
+    
+    
+}
 
  /*--------------------------------------FOOTER-------------------------------------*/
 
@@ -395,6 +391,7 @@ nav a:hover {
  /* Movies--------------------------------------------------------------- */ 
 
  .container {
+   
     background: conic-gradient(from 180deg at 50% 50%, rgba(74, 142, 157, 0.53) -179.77deg, #4a8e9d79 156.82deg, rgba(74, 142, 157, 0.53) 180.23deg, #4a8e9d79 516.82deg);
     width: 1440px;
     max-width: 100%;
@@ -430,9 +427,9 @@ display: grid;
 }
 .product-grid{
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(14rem,1fr));
-    grid-gap: 5px;
-    margin: 10px;
+    grid-template-columns: repeat(auto-fit,minmax(14rem,2fr));
+    grid-gap:5px;
+    margin: 2px;
 }
 .card {
     aspect-ratio: 1 / 1;
@@ -463,9 +460,10 @@ display: grid;
   
  
  .Backgroundmovieset {
-    background-image: url(images/checkout_background.jpg);
+    background-image: url(images/Curtains.jpg);
     background-size: cover;
      position: relative;
+     color: white;
      max-width: 1440px;
      height: 820px;
      margin-left: auto;
@@ -474,6 +472,7 @@ display: grid;
      margin-top: var(--margin-top);
      background-repeat: no-repeat;
      grid-template-columns: 1fr;
+     margin-top: var(--margin-top);
     }
 
 .Yourdetails {
@@ -520,7 +519,7 @@ display: grid;
      width: 1440px;
      height: 900px;
      max-width: 100%;
-     margin-top: 10px;
+     margin-top: var(--margin-top);
      border-radius: var(--border-radius) ;
  }
  .Aboutparagraph {
@@ -528,7 +527,7 @@ display: grid;
     color: #fff;
     max-width: 460px;
     top: 400px;
-    left: 340px;
+    left: 534px;
     z-index: 3;
 
  }
@@ -537,7 +536,7 @@ display: grid;
     color: #fff;
     max-width: 460px;
     top: 340px;
-    left: 340px;
+    left: 673px;
     z-index: 4;
 
 
@@ -548,7 +547,10 @@ display: grid;
  /* CONTACT--------------------------------------------------------*/
  /* CONTACT--------------------------------------------------------*/
  /* CONTACT--------------------------------------------------------*/
- 
+ .feilset {
+  position: absolute;
+ }
+
  .curtainscontact {
     background-image: url(images/Curtains.jpg);
     background-repeat: no-repeat;
@@ -559,7 +561,7 @@ display: grid;
     width: 1440px;
     height: 900px;
     max-width: 100%;
-    margin-top: 10px;
+    margin-top: var(--margin-top);
     border-radius: var(--border-radius) ;
  }
 .contact_h2{
@@ -575,7 +577,8 @@ display: grid;
     top: 105px;
     background-color: #25205b48;
     border-radius: var(--border-radius) ;
-    color: white;   
+    color: white;  
+    font-weight: bold;  
 }
 .contact_information{
     position: absolute;
@@ -595,9 +598,7 @@ width: 69px;
 height: 13px;
 left: 20px;
 top: 20px;
-font-family: 'Verdana';
-font-style: normal;
-font-weight: 600;
+font-weight: bold;
 font-size: 15px;
 line-height: 13px;
 
@@ -607,12 +608,9 @@ color: #FFFFFF;
 position: absolute;
 width: 162px;
 height: 13px;
-left: 23px;
+left: 20px;
 top: 106px;
-
-font-family: 'Verdana';
-font-style: normal;
-font-weight: 600;
+font-weight: bold;
 font-size: 12px;
 line-height: 13px;
 color: #FFFFFF;
@@ -624,12 +622,49 @@ color: #FFFFFF;
     height: 13px;
     left: 20px;
     top: 132px;
-    font-family: 'Verdana';
-    font-style: normal;
-    font-weight: 600;
+
+    font-weight: bold;
     font-size: 12px;
     line-height: 13px;
     color: #FFFFFF;
+}
+
+.message_box{
+    position: absolute;
+    width: 278px;
+    height: 173px;
+    left: 720px;
+    top: 114px;
+    color: white;
+    font-weight: bold;
+
+    font-size: 13px;
+    background: #ce3dbb71;
+    border-radius: 10px;
+}
+.message{
+    left: 40px;
+    top: 22px;
+    position: absolute;
+}
+.textarea{
+    background-color: rgb(184, 182, 182);
+    height: 81px;
+    width: 220px;
+    border-radius: 5px;
+    position: absolute;
+    top: 45px;
+    left: 40px;
+
+}
+.send_message{
+    padding: 5px;
+    border-radius: var(--border-radius);
+    background-color: #25205B;
+    position: absolute;
+    left: 144px;
+    top: 134px;
+    color: white;
 }
 
  /*-------------------------------PRODUCTPAGES-------------------*/
@@ -732,8 +767,8 @@ color: #FFFFFF;
 
 
 .PurchaseSuccess {
-   background-image: url(images/movie\ 2020\ 49.jpg);
- 
+   background-image: url(images/Curtains.jpg);
+   background-size: cover;
    position: relative;
    max-width: 1440px;
    height: 920px;
@@ -742,7 +777,7 @@ color: #FFFFFF;
    border-radius: var(--border-radius) ;
    background-repeat: no-repeat;
    background-size: cover;
-   
+   margin-top: var(--margin-top);
 
 
 }
@@ -761,12 +796,12 @@ color: #FFFFFF;
 
 .PurchaseSuccessbtn {
     position: absolute;
-    left: 46px;
+    left: 595px;
     top: 517px;
     text-decoration: none;
     font-weight: bold;
     color: #fff;
-    padding: 30px 600px;
+    padding: 30px 60px;
     border-radius: 5px;
     background-color: rgb(18, 150, 0);
     border: 2px black;
@@ -797,7 +832,7 @@ color: #FFFFFF;
     font-size: 50px;
     font-weight: bold;
     color: #fff;
-  left: 400px;
+  left: 500px;
  bottom: 400px; ;
 }
 .main_collections {
@@ -805,8 +840,11 @@ color: #FFFFFF;
     display: flex;
     justify-content: center;
     border-radius: var(--border-radius);
-
-}
+    }
+    .collections_construction {
+        background-image: url(images/Collections.jpg);
+        background-size:cover ;
+    }
 
 /*--------------------------MEDIA-QUERIES-------------------*/
 /*--------------------------MEDIA-QUERIES-------------------*/
@@ -842,9 +880,7 @@ color: #FFFFFF;
  
     /*------------------900PX-down---------------------------*/
 @media (max-width: 905px) {
-    #menu-checkbox:checked ~ nav {
-      display: block;
-    }
+  
     .logo {
         max-width: 224px;
     }
@@ -862,7 +898,6 @@ color: #FFFFFF;
     }
     .Prod_Back_Dune {
         background-image: url(images/DUNE\ BACKGROUND.png);
-        
         background-repeat: no-repeat;
     }
     .Yourdetails {
@@ -905,23 +940,18 @@ color: #FFFFFF;
 }  
 
   @media (min-width: 906px) {
-    #menu-checkbox:checked ~ nav {
+    nav {
       display: flex;
     }
     
-   #menu-checkbox {
-        display: none;
-    }
-    .fas {
-        display:none ;
-    }
+  
     
     nav {
         position: absolute;
         z-index: 3;
         border-radius: var(--border-radius);
         padding: 1px;
-        display: none;
+      
     
      
         background-color: #25205b00;
@@ -931,13 +961,46 @@ color: #FFFFFF;
         
         
     }
+    .fas {
+        position: relative;
+        float: left;
+        font-size: 24px;
+        left: 20px;
+        border: var(--border);
+        display: none;
+    
+    }
 }
 /*-----------------------------600px-DOWN-----------------------------*/
 @media (max-width: 600px){
     nav{
     bottom: 0px;
     }
-    .curtains {
+    #menu-checkbox {
+        float: right;
+        border: var(--border);
+    }
+    .fas {
+        position: relative;
+        float: left;
+        font-size: 24px;
+        left: 20px;
+        border: var(--border);
+      
+    }
+    
+    #menu-checkbox:checked ~ nav {
+        display: block;
+        
+    }
+    nav,#menu-checkbox{
+        display: none;
+       
+    }
+    
+        
+        
+.curtains {
         background-image: url(images/thin-dark-purple-lines-ronsm3ciz7dw4kuz\ copy\ Medium.jpeg);
         }
         .curtainscontact {
@@ -953,6 +1016,18 @@ color: #FFFFFF;
             border-radius: var(--border-radius) ;
             color: white;   
             max-width: 170px;
+        }
+        .message_box {
+            position: absolute;
+            width: 278px;
+            height: 173px;
+            left: 66px;
+            top: 636px;
+            color: white;
+            font-size: 12px;
+            font-weight: bold;
+            background: #ce3dbb87;
+            border-radius: 10px;
         }
 
         .Prod_Back_Dune {
@@ -995,5 +1070,16 @@ color: #FFFFFF;
                 top: 444px;
            
             }
+            .PurchaseSuccessbtn {
+                position: absolute;
+                left: 67px;
+                top: 224px;}
 
+                .Successbutton {
+                    position: absolute;
+                    left: 131px;
+                    top: 360px;}
+                    .PurchaseSuccess {
+                        background-image:  url(images/thin-dark-purple-lines-ronsm3ciz7dw4kuz\ copy\ Medium.jpeg);
+                    }
 }
