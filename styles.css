@@ -673,8 +673,8 @@ color: #FFFFFF;
  /*-------------------------------PRODUCTPAGES-------------------*/
 
 .Prod_Back_Dune {
-     background-image: url(images/DUNE\ BACKGROUND.png);
-     background-size: contain;
+     background-image: url(images/DUNE_BACKGROUND.jpg);
+     background-size: cover;
    
     
      position: relative;
@@ -689,7 +689,7 @@ color: #FFFFFF;
 }
 .Prod_Back_scream {
     background-image: url(images/Screambackground.jpg);
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     position: relative;
     max-width: 1440px;
@@ -700,7 +700,7 @@ color: #FFFFFF;
     align-items: center;
     margin-top: var(--margin-top);
 }
-.Prod_Back_scream {
+.Prod_Back_aliens {
     background-image: url(images/Aliens-Background.jpg);
     background-size: contain;
     background-repeat: no-repeat;
@@ -712,6 +712,7 @@ color: #FFFFFF;
     border-radius: var(--border-radius) ;
     align-items: center;
     margin-top: var(--margin-top);
+    z-index: 0;
 }
 .Prod_Back_once {
     background-image: url(images/Once_background.jpg);
@@ -725,6 +726,130 @@ color: #FFFFFF;
     border-radius: var(--border-radius) ;
     align-items: center;
     margin-top: var(--margin-top);
+}
+.Prod_Back_Enter_the_void{
+    background-image: url(images/Enter_the_void.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    max-width: 1440px;
+    height: 820px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: var(--border-radius) ;
+    align-items: center;
+    margin-top: var(--margin-top);
+}
+.Prod_Back_Force_majeure{
+    background-image: url(images/Force_Background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    max-width: 1440px;
+    height: 820px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: var(--border-radius) ;
+    align-items: center;
+    margin-top: var(--margin-top);
+}
+.Prod_Back_Ratatouille {
+    background-image: url(Images/Ratatouille-background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    max-width: 1440px;
+    height: 820px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: var(--border-radius) ;
+    align-items: center;
+    margin-top: var(--margin-top);
+
+}
+.Prod_Back_toy_story4{
+    background-image: url(Images/Toy_story4_background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    max-width: 1440px;
+    height: 820px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: var(--border-radius) ;
+    align-items: center;
+    margin-top: var(--margin-top);
+
+}
+.Prod_Back_Eyes_Wide_Shut{
+    background-image: url(Images/Eyes_wide_shut_bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    max-width: 1440px;
+    height: 820px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: var(--border-radius) ;
+    align-items: center;
+    margin-top: var(--margin-top);
+
+}
+.Prod_Back_One_Flew {
+    background-image: url(Images/One_Flew_bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    max-width: 1440px;
+    height: 820px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: var(--border-radius) ;
+    align-items: center;
+    margin-top: var(--margin-top);
+}
+.Prod_Back_Batman {
+    background-image: url(Images/Batman_bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    max-width: 1440px;
+    height: 820px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: var(--border-radius) ;
+    align-items: center;
+    margin-top: var(--margin-top);
+
+}
+.Prod_Back_No_Country {
+    background-image: url(Images/No_country_bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    max-width: 1440px;
+    height: 820px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: var(--border-radius) ;
+    align-items: center;
+    margin-top: var(--margin-top);
+
+
+}
+.Prod_Back_Purple_Rain {
+    background-image: url(Images/PurpleRainBG.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    max-width: 1440px;
+    height: 820px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: var(--border-radius) ;
+    align-items: center;
+    margin-top: var(--margin-top);
+    
 }
 .DUNEPICture {
     position: absolute;
@@ -743,8 +868,8 @@ color: #FFFFFF;
 
 .purchase {
     position:absolute;   
-    left: 380px;
-    top: 410px;
+    left: 330px;
+    top: 400px;
     text-decoration: none;
     font-weight: bold;
     color: #fff;
@@ -755,9 +880,24 @@ color: #FFFFFF;
     position: relative;
     max-width: 300px;
     color: #fff;
-    left: 380px;
-    top:140px
+    left: 330px;
+    top:110px;
+    background-color: #252424df;
+    border-radius: var(--border-radius);
+    padding: 5px;
  }
+.Backbtn{
+    position: absolute;
+    color: white;
+    font-weight: bold;
+    padding:5px;
+    background-color: #80808094;
+    border-radius: 5px;
+    left: 10px;
+    top: 10px;
+}
+
+
 
 
  /*----------------------------PurchaseSuccess------------------------*/
@@ -973,7 +1113,7 @@ color: #FFFFFF;
     }
 }
 /*-----------------------------600px-DOWN-----------------------------*/
-@media (max-width: 600px){
+@media (max-width: 900px){
     nav{
     bottom: 0px;
     }
@@ -1044,7 +1184,33 @@ color: #FFFFFF;
         .Prod_Back_once {
             background-image: url(images/thin-dark-purple-lines-ronsm3ciz7dw4kuz\ copy\ Medium.jpeg);
         }
-
+        .Prod_Back_Force_majeure{
+            background-image: url(images/thin-dark-purple-lines-ronsm3ciz7dw4kuz\ copy\ Medium.jpeg);
+        }
+        .Prod_Back_Enter_the_void{
+            background-image: url(images/thin-dark-purple-lines-ronsm3ciz7dw4kuz\ copy\ Medium.jpeg);
+        }
+        .Prod_Back_Ratatouille {
+            background-image: url(images/thin-dark-purple-lines-ronsm3ciz7dw4kuz\ copy\ Medium.jpeg);
+        }
+        .Prod_Back_toy_story4{
+            background-image: url(images/thin-dark-purple-lines-ronsm3ciz7dw4kuz\ copy\ Medium.jpeg);
+        }
+        .Prod_Back_Eyes_Wide_Shut{
+            background-image: url(images/thin-dark-purple-lines-ronsm3ciz7dw4kuz\ copy\ Medium.jpeg);
+        }
+        .Prod_Back_One_Flew {
+            background-image: url(images/thin-dark-purple-lines-ronsm3ciz7dw4kuz\ copy\ Medium.jpeg);
+        }
+        .Prod_Back_Batman {
+            background-image: url(images/thin-dark-purple-lines-ronsm3ciz7dw4kuz\ copy\ Medium.jpeg);
+        }
+        .Prod_Back_No_Country {
+            background-image: url(images/thin-dark-purple-lines-ronsm3ciz7dw4kuz\ copy\ Medium.jpeg);
+        }
+        .Prod_Back_Purple_Rain {
+            background-image: url(images/thin-dark-purple-lines-ronsm3ciz7dw4kuz\ copy\ Medium.jpeg);
+        }
         .DUNEPICture {
          position: absolute;
          left: 30px;
