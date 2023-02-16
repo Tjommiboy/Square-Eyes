@@ -67,7 +67,7 @@ h1 { font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 
  }
  header {
-    position: relative;
+    position: sticky;
      background-image: url(Images/Header-Background.jpg);
      background-size:cover;
      background-repeat: no-repeat;
@@ -83,7 +83,6 @@ h1 { font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 
  header{
     color: #fff; 
-    position: relative;
     border: var(--border);
 }
 .squareyeslogo {
@@ -153,7 +152,6 @@ nav {
     border-radius: var(--border-radius);
     padding: 1px;
     grid-template-columns: 1fr;
-    grid-gap: 80px;
     background-color: #25205b;
     }
 
@@ -164,8 +162,10 @@ nav a {
     font-weight: bold;
     font-size:17px;
     z-index: 4;
-    display:block;
     border: var(--border);
+    margin: 40px;
+    
+
 
 }
 
@@ -187,7 +187,8 @@ nav a:hover {
 }
 
  .hero {
-     background: conic-gradient(from 180deg at 50% 50%, #4e0f3cc2 -232.5deg, #767676 101.25deg, #4e0f3cc2 127.5deg, #767676 461.25deg);
+    background: conic-gradient(from 180deg at 50% 50%, rgba(74, 142, 157, 0.53) -179.77deg,
+    #4a8e9d78 156.82deg, rgba(74, 142, 157, 0.53) 180.23deg, #4a8e9d78 516.82deg);
      max-width: 100%;
      max-width: 1440px;
      height: 482px;
@@ -196,8 +197,7 @@ nav a:hover {
      color: rgb(62, 34, 34);
      margin-left: auto;
      margin-right: auto;
-     display: flex;
-     flex-wrap: wrap;
+  
      position: relative;
      border: 1px solid rgba(255, 0, 255, 0.548);
      border: var(--border);
@@ -241,14 +241,14 @@ nav a:hover {
      left: 70px;
      top: 804px;
      border-radius: var(--border-radius) ;
-     border: 2px solid #699D9A;
+    
      margin-left: auto;
      margin-right: auto; 
      color: rgb(62, 34, 34);
      align-items: center;
      display: flex;
      justify-content: space-around;
-     border: var(--border);
+  
    
  }
 
@@ -276,7 +276,7 @@ nav a:hover {
 .collections {
     background-image: url(images/Collections.jpg);
     height: 170px;
-    width: 700px;
+    width: 715px;
     background-size: cover;
     border-radius: var(--border-radius) ;
     border: var(--border);
@@ -285,7 +285,7 @@ nav a:hover {
 .categories {
     background-image: url(images/Categories.jpg);
     height: 170px;
-    width: 700px;
+    width: 715px;
     background-size: cover;
     border-radius: var(--border-radius) ;
     border: var(--border);
@@ -313,7 +313,7 @@ nav a:hover {
 .flex {
     display: flex;
     justify-content: center;
-    padding-top: 15px;
+    margin-top: var(--margin-top);
     border: var(--border);
 }
 .full-width {
@@ -342,7 +342,7 @@ nav a:hover {
     
 }
 .bg-purp {
-    background-color: rgb(108, 2, 146);
+    background-color: rgba(108, 2, 146, 0.595);
     
     
 }
@@ -350,30 +350,32 @@ nav a:hover {
  /*--------------------------------------FOOTER-------------------------------------*/
 
 .footer_list{
+    position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
     grid-template-columns: 1fr;
     grid-gap: 30px;
-
     font-size: 40px;
     color: #ffffff;
     border: var(--border);
+    top: 87px;
+    left: 1230px;
 
 }
 
 .footer_paragraph {
     position: absolute;
-    font-size: 10px;
-    left: px;
-    top: 120px;
+    font-size: 13px;
+    left: 20px;
+    top: 106px;
     padding: px;
 }
 
 
  .footer {
      position:relative;
-     background: #25205B;
+     background: #5e57af;
      width: 1440px;
      max-width: 100%;
      height: 144px;
@@ -384,7 +386,10 @@ nav a:hover {
      color: rgb(255, 255, 255);
      border: var(--border);
 }
-
+.fa-brands, .fab {
+    font-weight: 400;
+    color: white;
+}
  /* Movies--------------------------------------------------------------- */ 
  /* Movies--------------------------------------------------------------- */ 
  /* Movies--------------------------------------------------------------- */ 
@@ -399,8 +404,8 @@ nav a:hover {
     top: 331px;
     margin-left: auto;
     margin-right: auto; 
+    padding: 10px;
     border-radius: var(--border-radius) ;
-    border: 2px solid #699D9A; 
     margin-top: var(--margin-top);
 }
 .stacked {
@@ -461,18 +466,17 @@ display: grid;
  
  .Backgroundmovieset {
     background-image: url(images/Curtains.jpg);
-    background-size: cover;
-     position: relative;
-     color: white;
-     max-width: 1440px;
-     height: 820px;
-     margin-left: auto;
-     margin-right: auto;
-     border-radius: var(--border-radius) ;
-     margin-top: var(--margin-top);
-     background-repeat: no-repeat;
-     grid-template-columns: 1fr;
-     margin-top: var(--margin-top);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1440px;
+    height: 755px;
+    max-width: 100%;
+    margin-top: var(--margin-top);
+    border-radius: var(--border-radius);
+    color: white;
     }
 
 .Yourdetails {
@@ -511,16 +515,16 @@ display: grid;
  /* ABOUT US----------------------------------------------------------- */
  .curtains {
     background-image: url(images/Curtains.jpg);
-    background-size: cover;
     background-repeat: no-repeat;
-     position: relative; 
-     margin-left: auto;
-     margin-right: auto;  
-     width: 1440px;
-     height: 900px;
-     max-width: 100%;
-     margin-top: var(--margin-top);
-     border-radius: var(--border-radius) ;
+    background-size: contain;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1440px;
+    height: 755px;
+    max-width: 100%;
+    margin-top: var(--margin-top);
+    border-radius: var(--border-radius);
  }
  .Aboutparagraph {
     position: absolute;
@@ -555,14 +559,14 @@ display: grid;
     background-image: url(images/Curtains.jpg);
     background-repeat: no-repeat;
     background-size: contain;
-    position: relative; 
+    position: relative;
     margin-left: auto;
-    margin-right: auto;  
+    margin-right: auto;
     width: 1440px;
-    height: 900px;
+    height: 755px;
     max-width: 100%;
     margin-top: var(--margin-top);
-    border-radius: var(--border-radius) ;
+    border-radius: var(--border-radius);
  }
 .contact_h2{
     color: white;
@@ -993,20 +997,20 @@ color: #FFFFFF;
 /*--------------------------MEDIA-QUERIES-------------------*/
 /*--------------------------MEDIA-QUERIES-------------------*/
 
+@media (max-width: 1301px){
+    nav a {
+        margin: 10px;
+    }
+}
 
 @media (max-width: 1218px){
     .hero-video {
-       
         max-width: 614px;
         max-height: 300px;
-      
-        }
+       }
     }
-    @media (max-width: 1127px){
-        nav{
-            grid-gap:25px;
-        }
-    }
+
+
 @media (max-width: 968px){
     .hero-video {
        
@@ -1014,13 +1018,20 @@ color: #FFFFFF;
         max-height: 250px;
       
         }
-      
-
+          .fas {
+        position: relative;
+        float: left;
+        font-size: 24px;
+        left: 20px;
+        border: var(--border);
+  
+    
     }
-
+    }
+  
  
     /*------------------900PX-down---------------------------*/
-@media (max-width: 905px) {
+@media (max-width: 900px) {
   
     .logo {
         max-width: 224px;
@@ -1081,20 +1092,12 @@ color: #FFFFFF;
 }  
 
   @media (min-width: 906px) {
-    nav {
-      display: flex;
-    }
-    
-  
-    
-    nav {
+        nav {
+        display: flex;
         position: absolute;
         z-index: 3;
         border-radius: var(--border-radius);
-        padding: 1px;
-      
-    
-     
+  
         background-color: #25205b00;
         opacity: 0.9;
         top: 88px;
@@ -1112,11 +1115,16 @@ color: #FFFFFF;
     
     }
 }
-/*-----------------------------600px-DOWN-----------------------------*/
+/*-----------------------------900px-DOWN-----------------------------*/
 @media (max-width: 900px){
     nav{
-    bottom: 0px;
+    bottom:0px;
+   
     }
+    nav a{
+        display: block;
+    }
+
     #menu-checkbox {
         float: right;
         border: var(--border);
