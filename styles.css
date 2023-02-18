@@ -483,7 +483,7 @@ display: grid;
     margin-left: auto;
     margin-right: auto;
     width: 1440px;
-    height: 755px;
+    height: 749px;
     max-width: 100%;
     margin-top: var(--margin-top);
     border-radius: var(--border-radius);
@@ -532,7 +532,7 @@ display: grid;
     margin-left: auto;
     margin-right: auto;
     width: 1440px;
-    height: 755px;
+    height: 749px;
     max-width: 100%;
     margin-top: var(--margin-top);
     border-radius: var(--border-radius);
@@ -574,7 +574,7 @@ display: grid;
     margin-left: auto;
     margin-right: auto;
     width: 1440px;
-    height: 755px;
+    height: 749px;
     max-width: 100%;
     margin-top: var(--margin-top);
     border-radius: var(--border-radius);
@@ -922,24 +922,25 @@ color: #FFFFFF;
 
 
 .PurchaseSuccess {
-   background-image: url(images/Curtains.jpg);
-   background-size: cover;
-   position: relative;
-   max-width: 1440px;
-   height: 920px;
-   margin-left: auto;
-   margin-right: auto;
-   border-radius: var(--border-radius) ;
-   background-repeat: no-repeat;
-   background-size: cover;
-   margin-top: var(--margin-top);
+    background-image: url(images/Curtains.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1440px;
+    height: 749px;
+    max-width: 100%;
+    margin-top: var(--margin-top);
+    border-radius: var(--border-radius);
+    color: white;
 
 
 }
 .Successbutton {
     position: absolute;
-    left: 654px;
-    top: 659px;
+    left: 660px;
+    top: 410px;
     text-decoration: none;
     font-weight: bold;
     color: #fff;
@@ -952,7 +953,7 @@ color: #FFFFFF;
 .PurchaseSuccessbtn {
     position: absolute;
     left: 595px;
-    top: 517px;
+    top: 265px;
     text-decoration: none;
     font-weight: bold;
     color: #fff;
