@@ -67,7 +67,7 @@ h1 { font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 
  }
  header {
-    position: sticky;
+    position:relative;
      background-image: url(Images/Header-Background.jpg);
      background-size:cover;
      background-repeat: no-repeat;
@@ -118,7 +118,10 @@ h1 { font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
    
 
 }
-
+.hide{
+    display:none;
+    
+}
 
 /*------------------------------NAVIGATION----Mobil-------------------------*/
 
