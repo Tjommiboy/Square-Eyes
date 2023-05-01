@@ -314,12 +314,19 @@ nav a:hover {
    border: var(--border);
    position: relative;
    top: 58px;
- 
-
-
+ }
+ .moviecontainer {
    
-   
-
+    background: conic-gradient(from 180deg at 50% 50%, rgba(74, 142, 157, 0.53) -179.77deg, #4a8e9d79 156.82deg, rgba(74, 142, 157, 0.53) 180.23deg, #4a8e9d79 516.82deg);
+    width: 1440px;
+    max-width: 100%;
+    left: 70px;
+    top: 331px;
+    margin-left: auto;
+    margin-right: auto; 
+    padding: 10px;
+    border-radius: var(--border-radius) ;
+    margin-top: var(--margin-top);
 }
 
 
@@ -444,7 +451,7 @@ display: grid;
 .card__price {
     font-size: 12px;
 }
-.product-grid{
+.product_grid{
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(14rem,2fr));
     grid-gap:5px;
@@ -452,7 +459,7 @@ display: grid;
 }
 .card {
     aspect-ratio: 1 / 1;
-    height: 300px;
+    height: 360px;
     width: 200px;
  
 }
