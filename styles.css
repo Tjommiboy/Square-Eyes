@@ -179,6 +179,45 @@ nav a:hover {
 
 
 
+.loader{
+    position: fixed;
+   
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:rgba(83, 226, 43, 0.069) ;
+    transition: opacity 1.72s, visibility 1.75s ;
+    z-index: 100;
+}
+
+.loader_hidden{
+    opacity: 0;
+    visibility: hidden;
+
+}
+
+.loader::after{
+    content: "";
+    width: 75px;
+    height: 75px;
+    border: 15px solid #ffffff;
+    border-top-color: #744;
+    border-radius: 50%;
+    animation: loading 1.75s ease infinite;
+
+}
+
+@keyframes loading {
+   from{ transform: rotate (0)
+        }
+        to{
+            transform: rotate(1turn);
+        }
+}
+
+
 
  /*------------------------------------HERO----------------------------------*/
 .HomeH2 {
@@ -328,8 +367,18 @@ nav a:hover {
     border-radius: var(--border-radius) ;
     margin-top: var(--margin-top);
 }
-
-
+.list_container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(14rem,2fr));
+    grid-gap:5px;
+    margin: 2px;
+}
+.cardindex {
+    aspect-ratio: 1 / 1;
+    height: 360px;
+    width: 200px;
+ 
+}
  /*----------------------------------SUBSCRIBE-BUTTON-----------------------------*/
 .flex {
     display: flex;
@@ -366,6 +415,10 @@ nav a:hover {
     background-color: rgba(108, 2, 146, 0.595);
     
     
+}
+
+.titlebtn {
+    padding: 20px;
 }
 
  /*--------------------------------------FOOTER-------------------------------------*/
@@ -1287,3 +1340,6 @@ color: #FFFFFF;
                         background-image:  url(images/thin-dark-purple-lines-ronsm3ciz7dw4kuz\ copy\ Medium.jpeg);
             }
 }
+
+
+

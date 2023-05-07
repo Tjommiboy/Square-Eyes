@@ -8,7 +8,9 @@
     <title>Movies</title>
     <link href="Styles.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/221ad82e2b.js" crossorigin="anonymous"></script>
-    <script  src="./scriptfolder/script.js" defer></script>
+    <script  src="./scriptfolder/data.js" defer type="module"></script>
+    <script  src="./scriptfolder/movies_script.js" defer type="module"></script>
+   
 </head>
 <body>
     <Header>
@@ -33,102 +35,7 @@
      <main>
           <div class="container">
                 <div class="product_grid">
-                    <div class="card stacked">
-                        <a href="Productpages/Dune.html"><img src="images/Dune.jpg" class="card__img" alt="Poster of Dune"></a>   
-                        <div class="card__content">
-                        <h2 class="card__title">Dune</h2>
-                        <p class="card__price">$ 9.99</p> 
-                        <p class="card_description">Sci-fi</p>
-                        </div>   
-                   </div> 
-                   <div class="card stacked">
-                        <a href="Productpages/Enter_The_Void.html"><img src="Images/Enter_the_void_Resized.png" class="card__img" alt="Poster of Enter the Void"></a>
-                        <div class="card__content">
-                         <h2 class="card__title">Enter The Void</h2>
-                         <p class="card__price">$ 9.99</p> 
-                         <p class="card_description">Drama/Fantasy</p>
-                        </div>    
-                   </div>
-                    <div class="card stacked">
-                        <a href="Productpages/Force_Majeure.html"><img src="images/force_majeure_Resized.png" class="card__img" alt="Poster of force_majeure"></a>
-                        <div class="card__content">
-                          <h2 class="card__title">Force Majeure</h2>
-                          <p class="card__price">$ 9.99</p> 
-                          <p class="card_description">Drama/Comedy</p>
-                        </div>    
-                    </div>
-                    <div class="card stacked">
-                        <a href="Productpages/Purple_Rain.html"><img src="images/Purple_Rain.jpg" class="card__img" alt="Poster of Purple Rain"></a>
-                        <div class="card__content">
-                          <h2 class="card__title">Purple Rain</h2>
-                          <p class="card__price">$ 9.99</p> 
-                          <p class="card_description">Musical/Drama</p>
-                        </div>    
-                    </div>
-                    <div class="card stacked">
-                        <a href="Productpages/Ratatouille.html"><img src="images/Rataouille_Resized.png" class="card__img" alt="Poster of Rataouille Resized"></a>
-                        <div class="card__content">
-                          <h2 class="card__title">Rataouille</h2>
-                          <p class="card__price">$ 9.99</p> 
-                          <p class="card_description">Animation</p>
-                        </div>    
-                    </div>    
-                    <div class="card stacked">
-                        <a href="Productpages/Scream.html"><img src="Images/Scream_Resized.png" class="card__img" alt="Poster of Scream"></a>
-                          <div class="card__content">
-                          <h2 class="card__title">Scream</h2>
-                          <p class="card__price">$ 9.99</p> 
-                          <p class="card_description">Horror/Mystery</p>
-                        </div>    
-                    </div>
-                    <div class="card stacked">
-                        <a href="Productpages/Toy_Story.html"><img src="Images/Toy_Story4.png" class="card__img" alt="Poster of Toy Story 4"></a>
-                        <div class="card__content">
-                          <h2 class="card__title">Toy Story</h2>
-                          <p class="card__price">$ 9.99</p> 
-                          <p class="card_description">Animation</p>
-                        </div>   
-                    </div> 
-                    <div class="card stacked">
-                        <a href="Productpages/Eyes_Wide_Shut.html"><img src="Images/Eyes_wide_shut.png" class="card__img" alt="Poster of Eyes Wide Shut"></a>
-                        <div class="card__content">
-                          <h2 class="card__title">Eyes Wide Shut</h2>
-                          <p class="card__price">$ 9.99</p> 
-                          <p class="card_description">Drama/Mystery</p>
-                        </div>    
-                    </div>
-                    <div class="card stacked">
-                        <a href="Productpages/One_Flew.html"><img src="Images/One_Flew.jpg" class="card__img" alt="Poster of One Flew Over The CooCoo´s Nest"></a>
-                        <div class="card__content">
-                          <h2 class="card__title">One Flew Over The Coocoo´s Nest</h2>
-                          <p class="card__price">$ 9.99</p> 
-                          <p class="card_description">Drama/Comedy</p>
-                        </div>   
-                    </div> 
-                    <div class="card stacked">
-                        <a href="Productpages/Aliens.html"><img src="images/Aliens.jpg" class="card__img" alt="Poster of Aliens"></a>
-                        <div class="card__content">
-                          <h2 class="card__title">Aliens</h2>
-                          <p class="card__price">$ 9.99</p> 
-                          <p class="card_description">Sci-fi/Horror</p>
-                        </div>    
-                    </div>
-                    <div class="card stacked">
-                        <a href="Productpages/Batman.html"><img src="Images/Batman_Resized.png" class="card__img" alt="Poster of Batman"></a>
-                         <div class="card__content">
-                          <h2 class="card__title">Batman</h2>
-                          <p class="card__price">$ 9.99</p> 
-                          <p class="card_description">Action/Adventure</p>
-                        </div>    
-                    </div>
-                    <div class="card stacked">
-                        <a href="Productpages/No_Country.html"><img src="images/No_Country_resized.png" class="card__img" alt="Poster of No Country"></a>
-                        <div class="card__content">
-                          <h2 class="card__title">No Country For Old Men</h2>
-                          <p class="card__price">$ 9.99</p> 
-                          <p class="card_description">Thriller/Crime</p>
-                        </div>  
-                    </div>  
+                 <div class="loader"></div>
                 </div> 
           </div>
  
