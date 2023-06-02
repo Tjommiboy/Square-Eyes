@@ -191,22 +191,21 @@ nav a:hover {
 }
 
  .hero {
-    background: conic-gradient(from 180deg at 50% 50%, rgba(74, 142, 157, 0.53) -179.77deg,
-    #4a8e9d78 156.82deg, rgba(74, 142, 157, 0.53) 180.23deg, #4a8e9d78 516.82deg);
-     max-width: 100%;
-     max-width: 1440px;
-     height: 482px;
-     margin: 20px;
-     border-radius: var(--border-radius) ;
-     color: rgb(62, 34, 34);
-     margin-left: auto;
-     margin-right: auto;
-  
-     position: relative;
-     border: 1px solid rgba(255, 0, 255, 0.548);
-     border: var(--border);
-     grid-template-rows: 1fr ;
-     grid-gap: 10px;
+    background: conic-gradient(from 180deg at 50% 50%, rgb(206 34 188 / 4%) -179.77deg, #4a8e9d78 197.82deg, rgb(208 36 190 / 13%) 269deg, #4a8e9d78 516.82deg);
+    max-width: 100%;
+    max-width: 1440px;
+    height: 482px;
+    margin: 20px;
+    border-radius: var(--border-radius);
+    color: rgb(62, 34, 34);
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    border: 1px solid rgba(255, 0, 255, 0.548);
+    border: var(--border);
+    grid-template-rows: 1fr;
+    grid-gap: 10px;
+
 }
 
     
@@ -229,7 +228,7 @@ nav a:hover {
     position: absolute;
     max-width: 901px;
     max-height: 440px;
-    left: 416px;
+    left: 458px;
     margin: 20px;
     border-radius: var(--border-radius);
     border: var(--border);
@@ -411,7 +410,7 @@ nav a:hover {
 
  .container {
    
-    background: conic-gradient(from 180deg at 50% 50%, rgba(74, 142, 157, 0.53) -179.77deg, #4a8e9d79 156.82deg, rgba(74, 142, 157, 0.53) 180.23deg, #4a8e9d79 516.82deg);
+    background: conic-gradient(from 180deg at 50% 50%, rgb(33 26 33 / 2%) -179.77deg, #4a8e9d78 197.82deg, rgb(20 18 20 / 8%) 269deg, #4a8e9d78 516.82deg);
     width: 1440px;
     max-width: 100%;
     left: 70px;
@@ -446,6 +445,7 @@ display: grid;
 }
 .product-grid{
     display: grid;
+    place-items: center;
     grid-template-columns: repeat(auto-fit,minmax(14rem,2fr));
     grid-gap:5px;
     margin: 2px;
@@ -494,35 +494,78 @@ display: grid;
     }
 
 .Yourdetails {
-
+    
     position: absolute;
     display: flex;
     flex-wrap: wrap;
-    left: 450px;
-    top: 105px;
-    background-color: #25205b48;
-    border-radius: var(--border-radius) ;
+    left: 385px;
+    top: 430px;
+    background-color: #2418a548;
+    border-radius: var(--border-radius);
     
  }
+.formwrapping {
+    margin: 20px;
+}
+
+
 .form__input{  
+    top: 20px;
  display: flex;
  max-width: 1440px;
+ margin: 6px;
  }
 
 .btncheckout {
-    position:absolute;   
-    left: 851px;
-    top: 303px;
+    position: absolute;
+    left: 1093px;
+    top: 639px;
     text-decoration: none;
     font-weight: bold;
     color: #fff;
-    padding: 10px;
-    border-radius: var(--border-radius) ;
+    padding: 15px;
+    border-radius: var(--border-radius);
+    background-color: rgb(207 146 15);
     
 }
  
+.purchaseTitle{  
+    font-size: 16px;
+    color: #2f21c7;}
 
- 
+.purchaseprice{
+    font-size: 12px;
+    color: #2f21c7;}
+.purchasedescription{
+    font-size: 12px;
+    color: #2f21c7;}
+.purchasecard {
+    aspect-ratio: 1 / 1;
+    height: 300px;
+    width: 200px;
+}
+.purchasecard__content{
+    z-index: 10;
+    background: white;
+    align-self: end;
+    margin: 7px 10px 13px;
+    padding: 10px;
+    box-shadow: 5px 4px rgba(46, 48, 47, 0.374);
+    position: relative;
+    left: 625px;
+    top: 50px;
+    border-radius: 2px;
+} 
+.purchasecard__img{
+    border: 12px solid rgb(123, 142, 131);
+    width: 100%;
+    object-fit: cover;
+    border-radius: var(--border-radius);
+    left: 624px;
+    top: 41px;
+    position: relative;
+
+}
  /* ABOUT US----------------------------------------------------------- */
  /* ABOUT US----------------------------------------------------------- */
  /* ABOUT US----------------------------------------------------------- */
@@ -543,19 +586,21 @@ display: grid;
  .Aboutparagraph {
     position: absolute;
     color: #fff;
-    max-width: 460px;
-    top: 400px;
-    left: 534px;
+    max-width: 653px;
+    top: 290px;
+    left: 424px;
     z-index: 3;
+    font-size: 16px;
 
  }
  .aboutus-h2 {
     position: absolute;
     color: #fff;
     max-width: 460px;
-    top: 340px;
-    left: 673px;
+    top: 21px;
+    left: 603px;
     z-index: 4;
+    font-size: 49px;
 
 
  }
@@ -591,9 +636,9 @@ display: grid;
     position: absolute;
     display: flex;
     flex-wrap: wrap;
-    left: 50px;
-    top: 105px;
-    background-color: #25205b48;
+    left: 482px;
+    top: 64px;
+    background-color: #2418a548;
     border-radius: var(--border-radius) ;
     color: white;  
     font-weight: bold;  
@@ -603,7 +648,7 @@ display: grid;
     width: 278px;
     height: 173px;
     left: 420px;
-    top: 114px;
+    top: 350px;
     color: white;
     font-size: 12px;
     background: #ce3dbb71;
@@ -652,7 +697,7 @@ color: #FFFFFF;
     width: 278px;
     height: 173px;
     left: 720px;
-    top: 114px;
+    top: 350px;
     color: white;
     font-weight: bold;
 
@@ -915,8 +960,92 @@ color: #FFFFFF;
     top: 10px;
 }
 
+.OneflewVid {
+   
+    position: relative;
+    left: 830px;
+    top: -40px;
+    border-radius: 5px;
+}
+.duneVid{
+    position: relative;
+    left: 830px;
+    top: -130px;
+    border-radius: 5px;
+}
+.enterthevoidVid{
+    position: relative;
+    left: 778px;
+    top: -130px;
+    border-radius: 5px;
+}
+.forcemajeureVid{
+    position: relative;
+    left: 778px;
+    top: -70px;
+    border-radius: 5px;
+}
+.purplerainVid{
+    position: relative;
+    left: 780px;
+    top: -156px;
+    border-radius: 5px;
 
+}
+.ratatouilleVid{
+    position: relative;
+    left: 831px;
+    top: -130px;
+    border-radius: 5px;
+}
+.screamVid{
+    position: relative;
+    left: 831px;
+    top: -130px;
+    border-radius: 5px;
 
+}
+
+.toystoryVid{
+    position: relative;
+    left: 831px;
+    top: -130px;
+    border-radius: 5px;
+
+}
+.eyeswideshutVid{
+    position: relative;
+    left: 831px;
+    top: -130px;
+    border-radius: 5px;
+}
+ .aliensVid{
+    position: relative;
+    left: 808px;
+    top: -189px;
+    border-radius: 5px;
+
+ }
+ .thebatmanVid{
+    position: relative;
+    left: 865px;
+    top: -134px;
+    border-radius: 5px;
+
+ }
+.nocountryVid {
+    position: relative;
+    left: 697px;
+    top: 256px;
+    border-radius: 5px;
+}
+.onceuponVid{
+    position: relative;
+    left: 741px;
+    top: -100px;
+    border-radius: 5px;
+
+}
 
  /*----------------------------PurchaseSuccess------------------------*/
  /*----------------------------PurchaseSuccess------------------------*/
@@ -970,7 +1099,6 @@ color: #FFFFFF;
 .Success {
     position: relative;
 }
-
 
 
 /*--------------UNDERCONSTRUCTION-------------------------------*/
