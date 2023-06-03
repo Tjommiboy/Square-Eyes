@@ -447,9 +447,10 @@ display: grid;
     display: grid;
     place-items: center;
     grid-template-columns: repeat(auto-fit,minmax(14rem,2fr));
-    grid-gap:5px;
+    grid-gap: 14px;
     margin: 2px;
 }
+
 .card {
     aspect-ratio: 1 / 1;
     height: 300px;
@@ -457,7 +458,7 @@ display: grid;
  
 }
 .card__img{
-   border: 12px solid rgb(123, 142, 131);
+    border: 2px solid rgb(123, 142, 131);
     width: 100%;
     object-fit: cover;
     border-radius: var(--border-radius);
@@ -765,17 +766,16 @@ color: #FFFFFF;
 }
 .Prod_Back_aliens {
     background-image: url(images/Aliens-Background.jpg);
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     position: relative;
     max-width: 1440px;
     height: 820px;
     margin-left: auto;
     margin-right: auto;
-    border-radius: var(--border-radius) ;
+    border-radius: var(--border-radius);
     align-items: center;
     margin-top: var(--margin-top);
-    z-index: 0;
 }
 .Prod_Back_once {
     background-image: url(images/Once_background.jpg);
@@ -915,24 +915,24 @@ color: #FFFFFF;
     
 }
 .DUNEPICture {
-    position: absolute;
-    left: 50px;
-    top: 80px;
+    position: relative;
+    left: 0px;
+    top: 0px;
    
 }
 .product-img {
-    height: 360px;
-    width: 260px;
-    border: 12px solid #699D9A;
+    height: 333px;
+    width: 227px;
+    border: 1px solid #699D9A;
     border-radius: var(--border-radius);
 
 }
 
 
 .purchase {
-    position:absolute;   
-    left: 330px;
-    top: 400px;
+    position: relative;
+    left: 165px;
+    top: 698px;
     text-decoration: none;
     font-weight: bold;
     color: #fff;
@@ -941,13 +941,14 @@ color: #FFFFFF;
 }
  .Synopsis {
     position: relative;
-    max-width: 300px;
+    max-width: 249px;
     color: #fff;
-    left: 330px;
-    top:110px;
+    left: 0;
+    top: -18px;
     background-color: #252424df;
     border-radius: var(--border-radius);
     padding: 5px;
+    font-size: 14px;
  }
 .Backbtn{
     position: absolute;
@@ -961,88 +962,125 @@ color: #FFFFFF;
 }
 
 .OneflewVid {
-   
+    width: 476px;
+    height: 269px;
     position: relative;
-    left: 830px;
-    top: -40px;
+    left: 0;
+    top: 0;
     border-radius: 5px;
 }
+.productgrid{
+    display: grid;
+    place-items: center;
+    grid-auto-flow: column;
+    grid-gap: 15px;
+    margin: 0px;
+    align-items: center;
+    justify-content: center;
+    top: 377px;
+    position: absolute;
+    right: 355px;
+}
+
 .duneVid{
+    width: 476px;
+    height: 269px;
     position: relative;
-    left: 830px;
-    top: -130px;
+    left: 0;
+    top: 0;
     border-radius: 5px;
 }
 .enterthevoidVid{
+    width: 476px;
+    height: 269px;
     position: relative;
-    left: 778px;
-    top: -130px;
+    left: 0;
+    top: 0;
     border-radius: 5px;
 }
 .forcemajeureVid{
+    width: 476px;
+    height: 269px;
     position: relative;
-    left: 778px;
-    top: -70px;
+    left: 0;
+    top: 0;
     border-radius: 5px;
 }
 .purplerainVid{
+    width: 476px;
+    height: 269px;
     position: relative;
-    left: 780px;
-    top: -156px;
+    left: 0;
+    top: 0;
     border-radius: 5px;
 
 }
 .ratatouilleVid{
+    width: 476px;
+    height: 269px;
     position: relative;
-    left: 831px;
-    top: -130px;
+    left: 0;
+    top: 0;
     border-radius: 5px;
 }
 .screamVid{
+    width: 476px;
+    height: 269px;
     position: relative;
-    left: 831px;
-    top: -130px;
+    left: 0;
+    top: 0;
     border-radius: 5px;
 
 }
 
 .toystoryVid{
+    width: 476px;
+    height: 269px;
     position: relative;
-    left: 831px;
-    top: -130px;
+    left: 0;
+    top: 0;
     border-radius: 5px;
 
 }
 .eyeswideshutVid{
+    width: 476px;
+    height: 269px;
     position: relative;
-    left: 831px;
-    top: -130px;
+    left: 0;
+    top: 0;
     border-radius: 5px;
 }
  .aliensVid{
+    width: 476px;
+    height: 269px;
     position: relative;
-    left: 808px;
-    top: -189px;
+    left: 0;
+    top: 0;
     border-radius: 5px;
-
  }
  .thebatmanVid{
+    width: 476px;
+    height: 269px;
     position: relative;
-    left: 865px;
-    top: -134px;
+    left: 0;
+    top: 0;
     border-radius: 5px;
 
  }
 .nocountryVid {
+    width: 476px;
+    height: 269px;
     position: relative;
-    left: 697px;
-    top: 256px;
+    left: 0;
+    top: 0;
     border-radius: 5px;
 }
 .onceuponVid{
+    width: 476px;
+    height: 269px;
     position: relative;
-    left: 741px;
-    top: -100px;
+    left: 0;
+    top: 0;
     border-radius: 5px;
 
 }
@@ -1367,22 +1405,19 @@ color: #FFFFFF;
             background-image: url(images/thin-dark-purple-lines-ronsm3ciz7dw4kuz\ copy\ Medium.jpeg);
         }
         .DUNEPICture {
-         position: absolute;
-         left: 30px;
-         top: 380px;
+            position: absolute;
+            left: 92px;
+            top: 47px;
         }
 
         .purchase {
-            position:absolute;   
-            left: 250px;
-            top: 650px;
+            position: relative;
+            left: 145px;
+            top: 196px;
         }
-         
-        .Synopsis {
         
-            left: 30px;
-            top:90px
-         }
+         
+       
          .product-img {
             height: 310px;
             width: 210px;}
@@ -1398,7 +1433,154 @@ color: #FFFFFF;
                 left: 67px;
                 top: 224px;
             }
-
+            .productgrid {
+                display: grid;
+    place-items: center;
+    grid-auto-flow: row;
+    grid-gap: 0;
+    margin: 0px;
+    align-items: center;
+    justify-content: center;
+    /* top: 0px; */
+    top: 22px;
+    right: 0px;
+    position: RELATIVE;
+            }
+            .Synopsis {
+                position: relative;
+                max-width: 231px;
+                color: #fff;
+                left: 0;
+                top: 373px;
+                background-color: #252424df;
+                border-radius: var(--border-radius);
+                padding: 5px;
+                font-size: 12px;
+             }
+            .OneflewVid {
+                width: 294px;
+                height: 193px;
+                position: relative;
+                left: 0;
+                top: -9px;
+                border-radius: 5px;
+            }
+            .duneVid{
+                width: 294px;
+                height: 193px;
+                position: relative;
+                left: 0;
+                top: 387px;
+                border-radius: 5px;
+            }
+            
+            
+            .enterthevoidVid {
+                width: 286px;
+                height: 172px;
+                position: absolute;
+                left: 26px;
+                top: 293px;
+                border-radius: 5px;
+            }
+            .forcemajeureVid{
+                width: 286px;
+                height: 172px;
+                position: absolute;
+                left: 26px;
+                top: 293px;
+                border-radius: 5px;
+            }
+            .purplerainVid{
+                width: 286px;
+                height: 172px;
+                position: absolute;
+                left: 26px;
+                top: 293px;
+                border-radius: 5px;
+            }
+            .ratatouilleVid{
+                width: 286px;
+                height: 172px;
+                position: absolute;
+                left: 26px;
+                top: 293px;
+                border-radius: 5px;
+            }
+            .screamVid{
+                width: 286px;
+                height: 172px;
+                position: absolute;
+                left: 26px;
+                top: 287px;
+                border-radius: 5px;
+            
+            }
+            
+            .toystoryVid{
+                width: 286px;
+                height: 172px;
+                position: absolute;
+                left: 26px;
+                top: 293px;
+                border-radius: 5px;
+            }
+            .eyeswideshutVid{
+                width: 286px;
+                height: 172px;
+                position: absolute;
+                left: 26px;
+                top: 293px;
+                border-radius: 5px;
+            }
+             .aliensVid{
+                width: 286px;
+                height: 172px;
+                position: absolute;
+                left: 26px;
+                top: 293px;
+                border-radius: 5px;
+            
+             }
+             .thebatmanVid{
+                width: 286px;
+                height: 172px;
+                position: absolute;
+                left: 26px;
+                top: 293px;
+                border-radius: 5px;
+            
+             }
+            .nocountryVid {
+                width: 286px;
+                height: 172px;
+                position: absolute;
+                left: 26px;
+                top: 293px;
+                border-radius: 5px;
+            }
+            .onceuponVid{
+                width: 286px;
+                height: 172px;
+                position: absolute;
+                left: 26px;
+                top: 293px;
+                border-radius: 5px;
+            
+            }
+            .footer_list {
+                position: absolute;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                grid-template-columns: 1fr;
+                grid-gap: 30px;
+                font-size: 25px;
+                color: #ffffff;
+                border: var(--border);
+                top: 58px;
+                left: 128px;
+            }
         .Successbutton {
                     position: absolute;
                     left: 131px;
@@ -1407,4 +1589,5 @@ color: #FFFFFF;
         .PurchaseSuccess {
                         background-image:  url(images/thin-dark-purple-lines-ronsm3ciz7dw4kuz\ copy\ Medium.jpeg);
             }
-}
+
+        }
