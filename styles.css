@@ -5,7 +5,7 @@
     --border-radius:5px;
     --full-width: 100%;
     --half-width: 50%;
-    --margin-top: 20px;
+    --margin-top: 7px;
   /* --border:1px solid red;*/
 }
 *::before
@@ -195,7 +195,7 @@ nav a:hover {
     max-width: 100%;
     max-width: 1440px;
     height: 482px;
-    margin: 20px;
+    margin: 7px;
     border-radius: var(--border-radius);
     color: rgb(62, 34, 34);
     margin-left: auto;
@@ -614,32 +614,46 @@ display: grid;
  .feilset {
   position: absolute;
  }
+.contactgrid{
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(auto-fit,minmax(14rem,2fr));
+    grid-gap: 14px;
+    margin: 2px;
+
+}
 
  .curtainscontact {
     background-image: url(images/Curtains.jpg);
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     position: relative;
     margin-left: auto;
     margin-right: auto;
     width: 1440px;
-    height: 749px;
+    height: 820px;
     max-width: 100%;
     margin-top: var(--margin-top);
     border-radius: var(--border-radius);
  }
 .contact_h2{
-    color: white;
-    display: flex;
-    justify-content: center;
+    position: absolute;
+    color: #fff;
+    max-width: 460px;
+    top: 21px;
+    left: 603px;
+    z-index: 4;
+    font-size: 49px;
 }
+
+
 .contact_details{
     position: absolute;
     display: flex;
     flex-wrap: wrap;
     left: 482px;
     top: 64px;
-    background-color: #2418a548;
+    background-color: #ce3dbb71;
     border-radius: var(--border-radius) ;
     color: white;  
     font-weight: bold;  
@@ -914,6 +928,7 @@ color: #FFFFFF;
     margin-top: var(--margin-top);
     
 }
+
 .DUNEPICture {
     position: relative;
     left: 0px;
@@ -931,8 +946,8 @@ color: #FFFFFF;
 
 .purchase {
     position: relative;
-    left: 165px;
-    top: 698px;
+    left: 319px;
+    top: 728px;
     text-decoration: none;
     font-weight: bold;
     color: #fff;
@@ -973,13 +988,13 @@ color: #FFFFFF;
     display: grid;
     place-items: center;
     grid-auto-flow: column;
-    grid-gap: 15px;
+    grid-gap: 18px;
     margin: 0px;
     align-items: center;
     justify-content: center;
-    top: 377px;
+    top: 406px;
     position: absolute;
-    right: 355px;
+    right: 199px;
 }
 
 .duneVid{
@@ -1214,9 +1229,18 @@ color: #FFFFFF;
  
     /*------------------900PX-down---------------------------*/
 @media (max-width: 900px) {
+
+    :root {
+        --border-radius: 5px;
+        --full-width: 100%;
+        --half-width: 50%;
+        --margin-top: 5px;
+        /* --border: 1px solid red; */
+    }
   
     .logo {
         max-width: 224px;
+        left: 60px;
     }
         .h3_text{
         font-size: 20px;
@@ -1259,7 +1283,7 @@ color: #FFFFFF;
 @media (max-width: 905px) {
     .aboutus-h2 {
         top: 218px;
-        left:  133px;
+        left: 63px;
        
     }
     .Aboutparagraph {
@@ -1331,34 +1355,66 @@ color: #FFFFFF;
     
         
         
-.curtains {
-        background-image: url(images/thin-dark-purple-lines-ronsm3ciz7dw4kuz\ copy\ Medium.jpeg);
+    .curtains{
+    background-image: url(images/thin-dark-purple-lines-ronsm3ciz7dw4kuz\ copy\ Medium.jpeg);
+    height: 676px;
         }
         .curtainscontact {
-            background-image: url(images/thin-dark-purple-lines-ronsm3ciz7dw4kuz\ copy\ Medium.jpeg);
-            background-size:cover;
+            background-image: url(images/Curtains.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1440px;
+    height: 1058px;
+    max-width: 100%;
+    margin-top: var(--margin-top);
+    border-radius: var(--border-radius);
         }
         .contact_details{
-            position: absolute;
-    
-            left: 160px;
+            position: relative;
+            left: 89px;
             top: 105px;
-            background-color: #5f5e68;
-            border-radius: var(--border-radius) ;
-            color: white;   
-            max-width: 170px;
+            background-color: #ce3dbba6;
+            border-radius: var(--border-radius);
+            color: white;
+            max-width: 224px;
         }
         .message_box {
             position: absolute;
-            width: 278px;
-            height: 173px;
-            left: 66px;
-            top: 636px;
+    width: 278px;
+    height: 173px;
+    left: 60px;
+    top: 837px;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    background: #ce3dbb87;
+    border-radius: 10px;
+        }
+        .Backgroundmovieset {
+            background-image: url(images/thin-dark-purple-lines-ronsm3ciz7dw4kuz\ copy\ Medium.jpeg);
+            background-repeat: no-repeat;
+            background-size: contain;
+            position: relative;
+            margin-left: auto;
+            margin-right: auto;
+            width: 1440px;
+            height: 749px;
+            max-width: 100%;
+            margin-top: var(--margin-top);
+            border-radius: var(--border-radius);
             color: white;
-            font-size: 12px;
-            font-weight: bold;
-            background: #ce3dbb87;
-            border-radius: 10px;
+        }
+
+        .Yourdetails{
+            left: 75px;
+        }
+        
+        .contact_information {
+            left: 60px;
+            top: 655px;
         }
 
         .Prod_Back_Dune {
@@ -1411,9 +1467,9 @@ color: #FFFFFF;
         }
 
         .purchase {
-            position: relative;
+            position: absolute;
             left: 145px;
-            top: 196px;
+            top: 383px;
         }
         
          
@@ -1423,8 +1479,8 @@ color: #FFFFFF;
             width: 210px;}
 
         .contact_information {
-                left: 66px;
-                top: 444px;
+            left: 60px;
+            top: 655px;
            
             }
 
@@ -1435,17 +1491,16 @@ color: #FFFFFF;
             }
             .productgrid {
                 display: grid;
-    place-items: center;
-    grid-auto-flow: row;
-    grid-gap: 0;
-    margin: 0px;
-    align-items: center;
-    justify-content: center;
-    /* top: 0px; */
-    top: 22px;
-    right: 0px;
-    position: RELATIVE;
-            }
+                place-items: center;
+                grid-template-rows: auto auto auto;
+                grid-gap: 0;
+                margin: 0px;
+                align-items: center;
+                justify-content: center;
+                top: 49px;
+                right: 3px;
+                position: relative;
+              }
             .Synopsis {
                 position: relative;
                 max-width: 231px;
@@ -1462,15 +1517,15 @@ color: #FFFFFF;
                 height: 193px;
                 position: relative;
                 left: 0;
-                top: -9px;
+                top: 211px;
                 border-radius: 5px;
             }
             .duneVid{
-                width: 294px;
-                height: 193px;
-                position: relative;
-                left: 0;
-                top: 387px;
+                width: 286px;
+                height: 172px;
+                position: absolute;
+                left: 58px;
+                top: 559px;
                 border-radius: 5px;
             }
             
@@ -1495,9 +1550,10 @@ color: #FFFFFF;
                 width: 286px;
                 height: 172px;
                 position: absolute;
-                left: 26px;
-                top: 293px;
+                left: 46px;
+                top: 573px;
                 border-radius: 5px;
+            
             }
             .ratatouilleVid{
                 width: 286px;
@@ -1589,5 +1645,17 @@ color: #FFFFFF;
         .PurchaseSuccess {
                         background-image:  url(images/thin-dark-purple-lines-ronsm3ciz7dw4kuz\ copy\ Medium.jpeg);
             }
+
+            .contact_h2 {
+                position: absolute;
+                color: #fff;
+                max-width: 460px;
+                top: 21px;
+                left: 45px;
+                z-index: 4;
+                font-size: 49px;
+            }        
+
+
 
         }
